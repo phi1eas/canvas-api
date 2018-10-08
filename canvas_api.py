@@ -99,19 +99,23 @@ class CanvasAPI():
             return responses[0]
         else:
             # print responses
+            # return responses
             return list(reduce(lambda x, y: itertools.chain(x, y), responses))
 
     def get_user(self, user_id):
         return self.get('/users/%s/profile' % user_id, single=True)
 
     def get_course_groups(self, course_id):
-        return self.get('/courses/%s/groups' % course_id)
+        return self.get('/courses/%s/groups?per_page=500' % course_id)
 
     def get_groups_in_category(self, group_category_id):
         return self.get('/group_categories/%s/groups' % group_category_id)
 
     def get_group_membership(self, group_id):
         return self.get('/groups/%s/memberships' % group_id)
+
+    def get_users_in_group(self, group_id):
+        return self.get('/groups/%s/users' % group_id)
 
     def get_courses(self):
         return self.get('/courses')
@@ -126,7 +130,7 @@ class CanvasAPI():
         return self.get('/courses/%s/modules/%s/items' % (course_id, module_id) )
 
     def get_quiz_submissions(self, course_id, quiz_id):
-        return self.get('/courses/%s/quizzes/%s/submissions' % (course_id, quiz_id))
+        return self.get('/courses/%s/quizzes/%s/submissions?per_page=500' % (course_id, quiz_id), single=True)
 
     def get_assignment_submissions(self, course_id, assignment_id, grouped=False):
         """
