@@ -108,6 +108,12 @@ class CanvasAPI():
     def get_course_groups(self, course_id):
         return self.get('/courses/%s/groups?per_page=500' % course_id)
 
+    def get_group_categories(self, course_id):
+        return self.get('/courses/%s/group_categories' % course_id, single=True)
+
+    def get_group_category(self, group_category_id):
+        return self.get('/group_categories/%s' % group_category_id, single=True)
+
     def get_groups_in_category(self, group_category_id):
         return self.get('/group_categories/%s/groups' % group_category_id)
 
@@ -123,6 +129,9 @@ class CanvasAPI():
     def get_assignments(self, course_id):
         return self.get('/courses/%s/assignments' % course_id)
 
+    def get_assignment(self, course_id, assignment_id):
+        return self.get('/courses/%s/assignments/%s' % (course_id, assignment_id), single=True)
+
     def get_users(self, course_id):
         return self.get('/courses/%s/users' % course_id)
 
@@ -130,7 +139,9 @@ class CanvasAPI():
         return self.get('/courses/%s/modules/%s/items' % (course_id, module_id) )
 
     def get_quiz_submissions(self, course_id, quiz_id):
-        return self.get('/courses/%s/quizzes/%s/submissions?per_page=500' % (course_id, quiz_id), single=True)
+
+        return self.get('/courses/%s/quizzes/%s/submissions?per_page=500&include[]=quiz' % (course_id, quiz_id), single=True)
+
 
     def get_assignment_submissions(self, course_id, assignment_id, grouped=False):
         """
@@ -141,7 +152,7 @@ class CanvasAPI():
         """
         payload = {'grouped': grouped}
         submissions = self.get('/courses/%s/assignments/%s/submissions' % (course_id, assignment_id), payload=payload)        
-        return filter(lambda sub: sub['workflow_state'] != 'unsubmitted', submissions)
+        return list(filter(lambda sub: sub['workflow_state'] != 'unsubmitted', submissions))
 
     def get_unasssigned_users_in_group_category(self, group_category_id):
         payload = {'unassigned': True}                
