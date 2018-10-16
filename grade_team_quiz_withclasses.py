@@ -38,6 +38,7 @@ class Team(object):
             self.users = capi.get_users_in_group(self.id)
         self.submissions = {} # dictionary with key quiz_id, value: list of submissions
 
+
 def mySort(s):
     if s is None:
         return "not submitted"
@@ -112,30 +113,34 @@ class Team_Set(object):
 
     def assign_same_grade(self, assignment_id):
         for team in self.teams.values():
-            print("\nlog of automatic team_quiz tool, {}".format(datetime.now()))
-            print("Team: {} submissions of {} (before change)".format(team.name, self.assignments[assignment_id].name))
+            message = "\nlog of automatic team_quiz regrading tool, run at {}\n".format(datetime.now())
+            message += "Team: {} submissions of {} (before change)\n".format(team.name, self.assignments[assignment_id].name)
             for subm in team.submissions[assignment_id]:
-                print("student: {}, finished: {}, score: {}".format(self.course.users[subm['user_id']].name, subm['submitted_at'], subm['score']))
+                message += "student: {}, finished: {}, score: {}\n".format(self.course.users[subm['user_id']].name, subm['submitted_at'], subm['score'])
 
             team_score = team.submissions[assignment_id][0]['score']
-            print("In team quiz, all students in a team receive the same grade which is equal to the first submission by the team, so {}".format(team_score))
+            message += "\nIn team quiz, all students in a team receive the same grade which is equal to the first submission by the team, so {}\n".format(team_score)
 
             changed = False
             for i in range(1, len(team.submissions[assignment_id])):
                 subm = team.submissions[assignment_id][i]
                 if subm['score'] != team_score:
-                    print("{}'s score is changed from {} to {}".format(self.course.users[subm['user_id']].name, subm['score'], team_score))
-                    # capi.grade_assignment_submission(self.course.id, self.quizzes[quiz_id].assignment_id, subm['user_id'], team_score, comment='automatic regrading of team quiz')
+                    message += "{}'s score is changed from {} to {}\n".format(self.course.users[subm['user_id']].name, subm['score'], team_score)
+                    capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score, comment="automatic regrading of {}: changing {}'s score from {} to {}".format(self.assignments[assignment_id].name, self.course.users[subm['user_id']].name, subm['score'], team_score))
                     subm['score'] = team_score
                     changed = True
 
             if changed:
-                print("Team: {} submissions of {} (after change)".format(team.name, self.assignments[assignment_id].name))
+                message += "\nTeam: {} submissions of {} (after change)\n".format(team.name, self.assignments[assignment_id].name)
                 for subm in team.submissions[assignment_id]:
-                    print("student: {}, finished: {}, score: {}".format(self.course.users[subm['user_id']].name, subm['submitted_at'], subm['score']))
+                    message += "student: {}, finished: {}, score: {}\n".format(self.course.users[subm['user_id']].name, subm['submitted_at'], subm['score'])
             else:
-                print("no changes necessary")
-            print("\n")
+                message += "no changes necessary\n"
+            print(message)
+
+            message = message.replace("\n","<br />\n")
+            if team.id > 0:
+                capi.announce_to_group(team.id, 'log of automatic regrading of {}'.format(self.assignments[assignment_id].name), message)
 
 
 
@@ -186,11 +191,13 @@ def main():
         with open('ModCrypto.pickle', 'wb') as handle:
             pickle.dump(ModCrypto, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
+    # msg = "First line<br>second line<br><br>test"
+    # capi.announce_to_group(18234, 'test', msg)
 
     # ModCrypto.get_team_set_by_name('Last 3 weeks').load_quiz(5932)
-    ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15886)
+    ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15888)
     # ModCrypto.get_team_set_by_name('Last 3 weeks').list_submissions(15886)
-    ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15886)
+    ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15888)
 
 
 

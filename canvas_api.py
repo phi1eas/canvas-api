@@ -177,7 +177,14 @@ class CanvasAPI():
 
         payload = {'name': name}
         return self.put('/groups/%s' % (group_id), payload=payload)            
-        
+
+    def announce_to_group(self, group_id, title, message):
+        payload = {'title': title,
+                   'message': message,
+                   'is_announcement': True}
+        return self.post('/groups/%s/discussion_topics' % (group_id), payload=payload)
+
+
     def set_group_membership(self, group_set_builder):
         results = []
         for group_id, membership in group_set_builder.groups.iteritems():            
