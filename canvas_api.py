@@ -133,7 +133,13 @@ class CanvasAPI():
         return self.get('/courses/%s/assignments/%s' % (course_id, assignment_id), single=True)
 
     def get_users(self, course_id):
-        return self.get('/courses/%s/users' % course_id)
+        """
+        retrieves all users of a course, including the test student
+        :param course_id:
+        :return:
+        """
+        payload = {'include[]': 'test_student'}
+        return self.get('/courses/%s/users' % course_id, payload=payload)
 
     def get_pages(self, course_id, module_id):
         return self.get('/courses/%s/modules/%s/items' % (course_id, module_id) )
@@ -143,7 +149,7 @@ class CanvasAPI():
         return self.get('/courses/%s/quizzes/%s/submissions?per_page=500&include[]=quiz' % (course_id, quiz_id), single=True)
 
 
-    def get_assignment_submissions(self, course_id, assignment_id, grouped=False):
+    def get_submitted_assignment_submissions(self, course_id, assignment_id, grouped=False):
         """
         Only returns those submissions that have actually been submitted, rather than potential submissions.
         :param course_id:
@@ -153,6 +159,16 @@ class CanvasAPI():
         payload = {'grouped': grouped}
         submissions = self.get('/courses/%s/assignments/%s/submissions' % (course_id, assignment_id), payload=payload)        
         return list(filter(lambda sub: sub['workflow_state'] != 'unsubmitted', submissions))
+
+    def get_all_assignment_submissions(self, course_id, assignment_id, grouped=False):
+        """
+        Only returns all potential submissions, also the ones that have not actually been submitted
+        :param course_id:
+        :param assignment_id:
+        :return:
+        """
+        payload = {'grouped': grouped}
+        return self.get('/courses/%s/assignments/%s/submissions' % (course_id, assignment_id), payload=payload)
 
     def get_unasssigned_users_in_group_category(self, group_category_id):
         payload = {'unassigned': True}                
@@ -177,6 +193,16 @@ class CanvasAPI():
 
         payload = {'name': name}
         return self.put('/groups/%s' % (group_id), payload=payload)            
+
+    def get_group_announcements(self, group_id, search_term=None):
+        if search_term:
+            payload = {'only_announcements': True,
+                       'search_term': search_term}
+        else:
+            payload = {'only_announcements': True}
+
+        return self.get('/groups/%s/discussion_topics' % (group_id), payload=payload, single=True)
+
 
     def announce_to_group(self, group_id, title, message):
         payload = {'title': title,

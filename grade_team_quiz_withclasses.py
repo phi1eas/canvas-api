@@ -49,10 +49,15 @@ class Team_Set(object):
     def __init__(self, dict, course):
         self.__dict__ = dict
         self.course = course
+
+        # create team for unassigned users
         noteam = Team({'id': 0,
                        'course_id': self.course.id,
                        'name': 'no team assigned'})
         noteam.users = capi.get_unasssigned_users_in_group_category(self.id)
+        # add Test Student to the teamless teams
+        noteam.users.append(self.course.users[self.course.test_student_id].__dict__)
+
         self.teams = {0: noteam}   # dictionary with key: team_id, values: Team objects
         self.assignments = {}  # dictionary with key: quiz_id, values: assignment dicts
 
@@ -82,7 +87,7 @@ class Team_Set(object):
 
     def load_assignment(self, assignment_id):
         self.assignments[assignment_id] = Assignment(capi.get_assignment(self.course.id, assignment_id))
-        submissions = capi.get_assignment_submissions(self.course.id, assignment_id, grouped=True)
+        submissions = capi.get_all_assignment_submissions(self.course.id, assignment_id, grouped=True)
 
         for subm in submissions:
             # find team of the submitter
@@ -111,24 +116,51 @@ class Team_Set(object):
             for subm in team.submissions[quiz_id]:
                 print("id: {}, finished: {}, score: {}, student: {}".format(subm['id'], subm['finished_at'], subm['score'], self.course.users[subm['user_id']].name))
 
-    def assign_same_grade(self, assignment_id):
+    def regrade_assignment(self, assignment_id, dry_run=False, be_nice=False):
+        self.assignments[assignment_id] = Assignment(capi.get_assignment(self.course.id, assignment_id))
+        submissions = capi.get_all_assignment_submissions(self.course.id, assignment_id, grouped=True)
+
+        for subm in submissions:
+            pprint(subm)
+
+
+
+    def assign_same_grade(self, assignment_id, dry_run=False, be_nice=False):
         for team in self.teams.values():
+            # try to figure out if regrading has already been run by looking through this team's announcements
+            if team.id > 0:
+                group_announcements = capi.get_group_announcements(team.id, search_term='log of automatic regrading of {}'.format(self.assignments[assignment_id].name))
+                if len(group_announcements) > 0:
+                    print('announcement log found! Regrading of {} has already been performed for team {}. Skipping the script for this team. Delete the announcement log in order to run the script nevertheless.'.format(self.assignments[assignment_id].name, team.name))
+                    continue    # with next team
+
             message = "\nlog of automatic team_quiz regrading tool, run at {}\n".format(datetime.now())
             message += "Team: {} submissions of {} (before change)\n".format(team.name, self.assignments[assignment_id].name)
             for subm in team.submissions[assignment_id]:
                 message += "student: {}, finished: {}, score: {}\n".format(self.course.users[subm['user_id']].name, subm['submitted_at'], subm['score'])
 
             team_score = team.submissions[assignment_id][0]['score']
-            message += "\nIn team quiz, all students in a team receive the same grade which is equal to the first submission by the team, so {}\n".format(team_score)
+            message += "\nIn team quizzes, all students in a team receive the same grade which is equal to the first submission by the team, so {}\n".format(team_score)
+            if be_nice:
+                message += "Due to special circumstances on that day, we only improve scores for this quiz.\n"
 
             changed = False
             for i in range(1, len(team.submissions[assignment_id])):
                 subm = team.submissions[assignment_id][i]
-                if subm['score'] != team_score:
-                    message += "{}'s score is changed from {} to {}\n".format(self.course.users[subm['user_id']].name, subm['score'], team_score)
-                    capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score, comment="automatic regrading of {}: changing {}'s score from {} to {}".format(self.assignments[assignment_id].name, self.course.users[subm['user_id']].name, subm['score'], team_score))
-                    subm['score'] = team_score
-                    changed = True
+                if be_nice:
+                    if subm['score'] is None or float(team_score) > float(subm['score']):
+                        message += "{}'s score is changed from {} to {}\n".format(self.course.users[subm['user_id']].name, subm['score'], team_score)
+                        if not dry_run:
+                            capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score, comment="automatic regrading of {}: changing {}'s score from {} to {}".format(self.assignments[assignment_id].name, self.course.users[subm['user_id']].name, subm['score'], team_score))
+                        subm['score'] = team_score
+                        changed = True
+                else:
+                    if team_score != subm['score']:
+                        message += "{}'s score is changed from {} to {}\n".format(self.course.users[subm['user_id']].name, subm['score'], team_score)
+                        if not dry_run:
+                            capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score, comment="automatic regrading of {}: changing {}'s score from {} to {}".format(self.assignments[assignment_id].name, self.course.users[subm['user_id']].name, subm['score'], team_score))
+                        subm['score'] = team_score
+                        changed = True
 
             if changed:
                 message += "\nTeam: {} submissions of {} (after change)\n".format(team.name, self.assignments[assignment_id].name)
@@ -140,19 +172,23 @@ class Team_Set(object):
 
             message = message.replace("\n","<br />\n")
             if team.id > 0:
-                capi.announce_to_group(team.id, 'log of automatic regrading of {}'.format(self.assignments[assignment_id].name), message)
+                if not dry_run:
+                    capi.announce_to_group(team.id, 'log of automatic regrading of {}'.format(self.assignments[assignment_id].name), message)
 
 
 
 class Course(object):
     def __init__(self, course_id):
         self.id = course_id
+        self.test_student_id = None
 
     def load_users(self):
         self.users = {} # dictionary with key: user_id, values: User objects
         users = capi.get_users(self.id)
         for user in users:
             self.users[user['id']] = User(user)
+            if user['name'] == 'Test Student':
+                self.test_student_id = user['id']
 
     def load_team_sets(self):
         team_sets = capi.get_group_categories(self.id)
@@ -184,9 +220,9 @@ def main():
             ModCrypto = pickle.load(handle)
     except FileNotFoundError:
         ModCrypto = Course(1598)
+        ModCrypto.load_users()
         ModCrypto.load_team_sets()
         ModCrypto.load_teams()
-        ModCrypto.load_users()
 
         with open('ModCrypto.pickle', 'wb') as handle:
             pickle.dump(ModCrypto, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -195,9 +231,44 @@ def main():
     # capi.announce_to_group(18234, 'test', msg)
 
     # ModCrypto.get_team_set_by_name('Last 3 weeks').load_quiz(5932)
-    ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15888)
-    # ModCrypto.get_team_set_by_name('Last 3 weeks').list_submissions(15886)
-    ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15888)
+
+
+
+    # Intro Quiz 7
+    intro_quiz_7_id = 15889
+    ModCrypto.get_team_set_by_name('Last 3 weeks').regrade_assignment(intro_quiz_7_id)
+
+
+    # # Team Quiz 3
+    # team_quiz_3_id = 15166
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').load_assignment(team_quiz_3_id)
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').assign_same_grade(team_quiz_3_id)
+
+    # # Team Quiz 2
+    # team_quiz_2_id = 15020
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').load_assignment(team_quiz_2_id)
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').assign_same_grade(team_quiz_2_id)
+
+    # # Team Quiz 1
+    # team_quiz_1_id = 13970
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').load_assignment(team_quiz_1_id)
+    # ModCrypto.get_team_set_by_name('First 3 Weeks').assign_same_grade(team_quiz_1_id)
+    #
+    # # Team Quiz 4: id: 15547
+    # ModCrypto.get_team_set_by_name('Week 4 only').load_assignment(15547)
+    # ModCrypto.get_team_set_by_name('Week 4 only').assign_same_grade(15547, be_nice=True)
+    #
+    # # Team Quiz 5: id: 15886
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15886)
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15886)
+
+    # # Team Quiz 6: id: 15890
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15890)
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15890)
+    #
+    # # Team Quiz 7: id: 15890
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').load_assignment(15890)
+    # ModCrypto.get_team_set_by_name('Last 3 weeks').assign_same_grade(15890)
 
 
 
