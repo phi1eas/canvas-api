@@ -3,7 +3,10 @@ __author__ = 'nah'
 
 import itertools
 import requests
+from contextlib import closing
+import csv
 from functools import reduce
+import codecs
 
 
 class GroupSetBuilder():
@@ -69,6 +72,30 @@ class CanvasAPI():
         # raises an exception if there was an http error
         r.raise_for_status()
         return r
+
+
+    def get_csv_file(self, url, payload=None):
+        if payload is None:
+            payload = {}
+
+        with closing(requests.get(url, stream=True)) as r:
+            reader = csv.DictReader(codecs.iterdecode(r.iter_lines(), 'utf-8'), delimiter=',', quotechar='"')
+
+            # some fieldnames in the csv files provided by Canvas may be way too long, so only use the part that is before the :
+            fieldnames = reader.fieldnames
+            for i in range(len(fieldnames)):
+                fieldnames[i] = fieldnames[i].split(':')[0]
+            reader.fieldnames = fieldnames
+
+            content_list = []
+            for row in reader:
+                content_list.append(row)
+
+            # raises an exception if there was an http error
+            r.raise_for_status()
+
+        return content_list
+
 
     def get_responses(self, api, payload=None):
         url = self.api_url + api
@@ -145,9 +172,30 @@ class CanvasAPI():
         return self.get('/courses/%s/modules/%s/items' % (course_id, module_id) )
 
     def get_quiz_submissions(self, course_id, quiz_id):
-
         return self.get('/courses/%s/quizzes/%s/submissions?per_page=500&include[]=quiz' % (course_id, quiz_id), single=True)
 
+    def get_quiz_reports(self, course_id, quiz_id):
+        return self.get('/courses/%s/quizzes/%s/reports?include[]=[file,progress]' % (course_id, quiz_id), single=True)
+
+    def create_quiz_report(self, course_id, quiz_id):
+        payload = {'quiz_report[report_type]': 'student_analysis',
+                   'include[]': '[file,progress]'}
+        return self.post('/courses/%s/quizzes/%s/reports' % (course_id, quiz_id), payload=payload)
+
+    def update_quiz_score(self, course_id, quiz_id, submission_id, attempt, questions):
+        payload = {
+                "quiz_submissions": [{
+                    "attempt": attempt,
+                    "questions": questions
+                }]
+        }
+        return self.post('courses/%s/quizzes/%s/submissions/%s' % (course_id, quiz_id, submission_id), payload=payload)
+
+    def get_quiz_questions(self, course_id, quiz_id):
+        return self.get('/courses/%s/quizzes/%s/questions' % (course_id, quiz_id), single=True)
+
+    def get_quiz_submission_questions(self, quiz_submission_id):
+        return self.get('/quiz_submissions/%s/questions' % (quiz_submission_id), single=True)
 
     def get_submitted_assignment_submissions(self, course_id, assignment_id, grouped=False):
         """

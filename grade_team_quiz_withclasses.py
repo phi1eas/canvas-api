@@ -59,7 +59,8 @@ class Team_Set(object):
         noteam.users.append(self.course.users[self.course.test_student_id].__dict__)
 
         self.teams = {0: noteam}   # dictionary with key: team_id, values: Team objects
-        self.assignments = {}  # dictionary with key: quiz_id, values: assignment dicts
+        self.assignments = {}  # dictionary with key: assignment_id, values: assignment object
+        self.quizzes = {}      # dictionary with key: quiz_id, values: quiz object
 
     def get_team_of_user(self, user_id):
         for team in self.teams.values():
@@ -68,7 +69,7 @@ class Team_Set(object):
                     return team
         raise Exception('team for user_id {} not found!'.format(user_id))
 
-    def load_quiz(self, quiz_id):
+    def load_team_quiz(self, quiz_id):
         team_quiz_submissions = capi.get_quiz_submissions(self.course_id, quiz_id)
         self.quizzes[quiz_id] = Quiz(team_quiz_submissions['quizzes'][0])
 
@@ -84,6 +85,36 @@ class Team_Set(object):
         # sort submissions per team by finished_at
         for team in self.teams.values():
             team.submissions[quiz_id] = sorted(team.submissions[quiz_id], key=lambda subm: mySort(subm['finished_at']))
+
+    def load_quiz(self, quiz_id):
+        quiz_submissions = capi.get_quiz_submissions(self.course.id, quiz_id)
+        self.quizzes[quiz_id] = Quiz(quiz_submissions['quizzes'][0])
+
+        quiz_report = capi.create_quiz_report(self.course.id, quiz_id).json()
+        answers = capi.get_csv_file(quiz_report['file']['url'])
+
+        quiz_questions = capi.get_quiz_questions(self.course.id, quiz_id)
+
+        for subm in quiz_submissions['quiz_submissions']:
+            # find corresponding answers:
+            answer = [answer for answer in answers if int(answer['id']) == subm['user_id']]
+            if len(answer)>1:
+                raise Exception('more than one user found')
+            else:
+                answer = answer[0]
+
+            print('score: {} and {}'.format(answer['score'], subm['score']))
+            if answer['180071'] and float(answer['180071']) == 10512:
+                print('score of {} should be increased by 1'.format(answer['name']))
+                questions = {
+                        "180071": {
+                            "score": 1,
+                            "comment": "Automatic regrading of numerical question"
+                        }
+                    }
+                pprint(capi.update_quiz_score(self.course.id, quiz_id, subm['id'], subm['attempt'], questions))
+
+
 
     def load_assignment(self, assignment_id):
         self.assignments[assignment_id] = Assignment(capi.get_assignment(self.course.id, assignment_id))
@@ -120,8 +151,10 @@ class Team_Set(object):
         self.assignments[assignment_id] = Assignment(capi.get_assignment(self.course.id, assignment_id))
         submissions = capi.get_all_assignment_submissions(self.course.id, assignment_id, grouped=True)
 
+        self.load_quiz(self.assignments[assignment_id].quiz_id)
+
         for subm in submissions:
-            pprint(subm)
+            print("student: {}, score: {}, status: {}, submitted at: {}, graded at: {}".format(self.course.users[subm['user_id']].name, subm['score'], subm['workflow_state'], subm['submitted_at'], subm['graded_at']))
 
 
 
@@ -215,17 +248,32 @@ class Course(object):
 def main():
 
 
-    try:
-        with open('ModCrypto.pickle', 'rb') as handle:
-            ModCrypto = pickle.load(handle)
-    except FileNotFoundError:
-        ModCrypto = Course(1598)
-        ModCrypto.load_users()
-        ModCrypto.load_team_sets()
-        ModCrypto.load_teams()
+    # try:
+    #     with open('ModCrypto.pickle', 'rb') as handle:
+    #         ModCrypto = pickle.load(handle)
+    # except FileNotFoundError:
+    #     ModCrypto = Course(1598)
+    #     ModCrypto.load_users()
+    #     ModCrypto.load_team_sets()
+    #     ModCrypto.load_teams()
+    #
+    #     with open('ModCrypto.pickle', 'wb') as handle:
+    #         pickle.dump(ModCrypto, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    #
 
-        with open('ModCrypto.pickle', 'wb') as handle:
-            pickle.dump(ModCrypto, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    try:
+        with open('InfTheory18.pickle', 'rb') as handle:
+            InfTheory = pickle.load(handle)
+    except FileNotFoundError:
+        InfTheory = Course(2205)
+        InfTheory.load_users()
+        InfTheory.load_team_sets()
+        InfTheory.load_teams()
+
+        with open('InfTheory18.pickle', 'wb') as handle:
+            pickle.dump(InfTheory, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+
 
     # msg = "First line<br>second line<br><br>test"
     # capi.announce_to_group(18234, 'test', msg)
@@ -233,11 +281,17 @@ def main():
     # ModCrypto.get_team_set_by_name('Last 3 weeks').load_quiz(5932)
 
 
+    # Team Quiz 3
+    team_quiz_1_id = 29558
+    InfTheory.get_team_set_by_name('First 3 Weeks').load_assignment(team_quiz_1_id)
+    InfTheory.get_team_set_by_name('First 3 Weeks').assign_same_grade(team_quiz_1_id, dry_run=True)
 
-    # Intro Quiz 7
-    intro_quiz_7_id = 15889
-    ModCrypto.get_team_set_by_name('Last 3 weeks').regrade_assignment(intro_quiz_7_id)
 
+
+    # # Intro Quiz 7
+    # intro_quiz_7_id = 15889
+    # InfTheory.get_team_set_by_name('Last 3 weeks').regrade_assignment(intro_quiz_7_id)
+    #
 
     # # Team Quiz 3
     # team_quiz_3_id = 15166
