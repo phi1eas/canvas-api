@@ -254,15 +254,17 @@ def assign_same_grade(teams, assignment, dry_run=False, be_nice=False):
 
         # try to figure out if regrading has already been run by looking through this team's announcements
         if team.id > 0:
-            group_announcements = team.get_discussion_topics()
-            # group_announcements = capi.get_group_announcements(team.id,
-            #                                                    search_term='log of automatic regrading of {}'.format(
-            #                                                        self.assignments[assignment_id].name))
-            # if len(group_announcements) > 0:
-            #     print(
-            #         'announcement log found! Regrading of {} has already been performed for team {}. Skipping the script for this team. Delete the announcement log in order to run the script nevertheless.'.format(
-            #             self.assignments[assignment_id].name, team.name))
-            #     continue  # with next team
+            group_announcements = team.get_discussion_topics(only_announcements=True)
+            already_regraded = False
+            for group_announcement in group_announcements:
+                if group_announcement.title == 'log of automatic regrading of {}'.format(assignment.name):
+                    already_regraded = True
+
+            if already_regraded:
+                print('announcement log found! Regrading of {} has already been performed for team {}. Skipping the script for this team. Delete the announcement log in order to run the script nevertheless.'.format(
+                        assignment.name, team.name))
+                continue  # with next team
+
 
         message = "\nlog of automatic team_quiz regrading tool, run at {}\n".format(datetime.now())
         message += "Team: {} submissions of {} (before change)\n".format(team.name, assignment.name)
@@ -283,26 +285,24 @@ def assign_same_grade(teams, assignment, dry_run=False, be_nice=False):
                     message += "{}'s score is changed from {} to {}\n".format(subm.user.name, subm.score, team_score)
                     if not dry_run:
                         comment = "automatic regrading of {}: changing {}'s score from {} to {}".format(assignment.name, subm.user.name, subm.score, team_score)
-                        subm.edit(score=team_score, comment=comment)
+                        subm = subm.edit(submission={'posted_grade': team_score}, comment={'text_comment': comment})
                         # capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score,
                         #                                  comment="automatic regrading of {}: changing {}'s score from {} to {}".format(
                         #                                      self.assignments[assignment_id].name,
                         #                                      self.course.users[subm['user_id']].name, subm['score'],
                         #                                      team_score))
-                    subm['score'] = team_score
                     changed = True
             else:
                 if team_score != subm.score:
                     message += "{}'s score is changed from {} to {}\n".format(subm.user.name, subm.score, team_score)
                     if not dry_run:
                         comment = "automatic regrading of {}: changing {}'s score from {} to {}".format(assignment.name, subm.user.name, subm.score, team_score)
-                        subm.edit(score=team_score, comment=comment)
+                        subm = subm.edit(submission={'posted_grade': team_score}, comment={'text_comment': comment})
                         # capi.grade_assignment_submission(self.course.id, assignment_id, subm['user_id'], team_score,
                         #                                  comment="automatic regrading of {}: changing {}'s score from {} to {}".format(
                         #                                      self.assignments[assignment_id].name,
                         #                                      self.course.users[subm['user_id']].name, subm['score'],
                         #                                      team_score))
-                    subm.score = team_score
                     changed = True
 
         if changed:
@@ -377,7 +377,7 @@ def main():
         team.submissions = sorted(team.submissions, key=lambda subm: mySort(subm.submitted_at))
 
 
-    assign_same_grade(relevant_teams, team_quiz_1, dry_run=True)
+    assign_same_grade(relevant_teams, team_quiz_1, dry_run=False)
 
     return True
 
