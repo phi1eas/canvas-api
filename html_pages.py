@@ -109,8 +109,6 @@ def save_item_to_html(item, template, save_dir):
 
         
 def main():
-    # Canvas API URL
-
     # Initialize a new Canvas object
     canvas = Canvas(API_URL, TOKEN)
 
