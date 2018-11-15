@@ -105,3 +105,6 @@ venv.bak/
 
 .idea
 local_settings.py
+*.pickle
+.DS_store
+
