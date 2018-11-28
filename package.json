@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "vuepress": "^0.7.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "mathjax": "^2.7.5",
+    "axios": "^0.18.0"
+  }
+}

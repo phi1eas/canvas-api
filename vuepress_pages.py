@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from canvasapi import Canvas
+from slugify import slugify
 import requests
 import string
 import pathlib
@@ -14,7 +15,7 @@ except ImportError:
     local_settings_exists = False
 
 API_URL = "https://canvas.uva.nl"
-HTML_DIR = "./html"
+VUEPRESS_DIR = "./docs"
 
 
 def group_by_subheader(items):
@@ -88,24 +89,20 @@ def _print_grouped_items(grouped):
 
 def format_filename(s, maxlen=80):
     """Remove illegal characters from string to use it as filename."""
-    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
-    filename = ''.join(c for c in s if c in valid_chars)
-    return filename[:maxlen]
+    return slugify(filename)[:maxlen]
 
-
-def save_item_to_html(item, template, save_dir):
+def save_item_as_doc(item, save_dir):
     # request content from Canvas
     item_content = json.loads(item.to_json())
     auth_post = '?access_token={}'.format(TOKEN)
     req = requests.get(item_content['url']+auth_post)
 
-    # Parse content and paste into template
+    # Parse content
     content = json.loads(req.text)
     if 'body' in content:
-        item_html = template.format(content['title'], content['body'])
-        filename = save_dir + '/' + format_filename(content['title']) + '.html'
+        filename = save_dir + '/' + format_filename(content['title']) + '/README.md'
         with open(filename, 'w', encoding='utf-8') as f:
-            f.write(item_html)
+            f.write(content['body'])
 
         
 def main():
@@ -116,13 +113,8 @@ def main():
     course = canvas.get_course(2205)
     modules = course.get_modules()
 
-    # Load HTML Template
-    with open('template.html', 'r') as f:
-        template = f.read()
-
     # Create dir to save html files
-    pathlib.Path(HTML_DIR).mkdir(exist_ok=True)
-
+    pathlib.Path(VUEPRESS_DIR).mkdir(exist_ok=True)
     for module in modules:
         # Load, group and filter pages from module
         items = module.get_module_items()
@@ -133,7 +125,7 @@ def main():
         # For each item, generate html file and save.
         for item in filtered:
             module_name = format_filename(module.name)
-            module_dir = HTML_DIR + '/' + module_name
+            module_dir = VUEPRESS_DIR + '/' + module_name
             pathlib.Path(module_dir).mkdir(exist_ok=True)
 
             # If item is a list, this is a SubHeader with some pages.
@@ -149,11 +141,11 @@ def main():
 
                 # Save pages as html. First item contains header, start at 2nd item.
                 for subitem in item[1:]:
-                    save_item_to_html(subitem, template, group_dir)
+                    save_item_as_doc(subitem, group_dir)
             
             else:
                 # item is not a list, so an item without header. Save in module_dir.
-                save_item_to_html(item, template, module_dir)
+                save_item_as_doc(item, module_dir)
 
 
 if __name__=="__main__":
