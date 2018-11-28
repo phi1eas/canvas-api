@@ -89,7 +89,7 @@ def _print_grouped_items(grouped):
 
 def format_filename(s, maxlen=80):
     """Remove illegal characters from string to use it as filename."""
-    return slugify(filename)[:maxlen]
+    return slugify(s)[:maxlen]
 
 def save_item_as_doc(item, save_dir):
     # request content from Canvas
@@ -100,10 +100,18 @@ def save_item_as_doc(item, save_dir):
     # Parse content
     content = json.loads(req.text)
     if 'body' in content:
+        pathlib.Path(save_dir + '/' + format_filename(content['title'])).mkdir(exist_ok=True)
         filename = save_dir + '/' + format_filename(content['title']) + '/README.md'
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(content['body'])
+    return save_dir + '/' + format_filename(content['title']), content['title']
 
+def process_sidebar(sidebar):
+    sidebar_list = []
+    for link, item in sidebar:
+        link = link.replace('./docs', '') + '/'
+        sidebar_list.append([link, item])
+    return json.dumps(sidebar_list)
         
 def main():
     # Initialize a new Canvas object
@@ -115,6 +123,8 @@ def main():
 
     # Create dir to save html files
     pathlib.Path(VUEPRESS_DIR).mkdir(exist_ok=True)
+
+    sidebar = []
     for module in modules:
         # Load, group and filter pages from module
         items = module.get_module_items()
@@ -141,12 +151,18 @@ def main():
 
                 # Save pages as html. First item contains header, start at 2nd item.
                 for subitem in item[1:]:
-                    save_item_as_doc(subitem, group_dir)
+                    path, title = save_item_as_doc(subitem, group_dir)
             
             else:
                 # item is not a list, so an item without header. Save in module_dir.
-                save_item_as_doc(item, module_dir)
-
+                path, title = save_item_as_doc(item, module_dir)
+            sidebar.append((path, title))
+    sidebar = process_sidebar(sidebar)
+    with open('docs/sample_config.js', 'r') as f:
+        template = f.read()
+    
+    with open('docs/config.js', 'w', encoding='utf-8') as f:
+            f.write(template.replace('SIDEBAR', sidebar))
 
 if __name__=="__main__":
     main()
