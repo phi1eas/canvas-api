@@ -9,5 +9,8 @@ and create a new access token
 copy-paste the value here
 
 """
+API_URL = "https://canvas.uva.nl"
+VUEPRESS_DIR = "./docs"
 
 TOKEN = ''
+COURSE = 2205 # Information Theory 2018-2019

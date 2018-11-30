@@ -3,6 +3,7 @@ module.exports = {
 	description: 'UvA course',
 	themeConfig: {
 		sidebar: SIDEBAR,
-		editLinks: false
-	}
+		editLinks: false,
+		displayAllHeaders: true
+    }
 }

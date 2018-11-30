@@ -1,5 +1,3 @@
-# Hello Information Theory students
-
-[[toc]]
+# Hello 
 
 <h1>test</h1>

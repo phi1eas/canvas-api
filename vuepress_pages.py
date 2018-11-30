@@ -10,13 +10,8 @@ import json
 
 try:
     from local_settings import *
-    local_settings_exists = True
 except ImportError:
-    local_settings_exists = False
-
-API_URL = "https://canvas.uva.nl"
-VUEPRESS_DIR = "./docs"
-
+    raise Exception('Please configure the local settings correctly in ./local_settings.py')
 
 def group_by_subheader(items):
     """
@@ -103,14 +98,31 @@ def save_item_as_doc(item, save_dir):
         pathlib.Path(save_dir + '/' + format_filename(content['title'])).mkdir(exist_ok=True)
         filename = save_dir + '/' + format_filename(content['title']) + '/README.md'
         with open(filename, 'w', encoding='utf-8') as f:
-            f.write(content['body'])
+            body = content['body'].replace('\(', '$').replace('\)', '$').replace('display: none;', '')
+            f.write()
+
+        # @todo, if body contains image, download image and save locally
     return save_dir + '/' + format_filename(content['title']), content['title']
 
 def process_sidebar(sidebar):
     sidebar_list = []
+    groups = []
+    group_items = dict()
     for link, item in sidebar:
         link = link.replace('./docs', '') + '/'
-        sidebar_list.append([link, item])
+        group = link.split('/')[1]
+        if group in groups:
+            group_items[group].append([link, item])
+        else:
+            groups.append(group)
+            group_items[group] = [[link, item]]
+        
+    for group in groups:
+        sidebar_list.append([
+            group,
+            group_items[group]
+        ])
+
     return json.dumps(sidebar_list)
         
 def main():
@@ -118,7 +130,7 @@ def main():
     canvas = Canvas(API_URL, TOKEN)
 
     # Load course content
-    course = canvas.get_course(2205)
+    course = canvas.get_course(COURSE)
     modules = course.get_modules()
 
     # Create dir to save html files
@@ -158,10 +170,10 @@ def main():
                 path, title = save_item_as_doc(item, module_dir)
             sidebar.append((path, title))
     sidebar = process_sidebar(sidebar)
-    with open('docs/sample_config.js', 'r') as f:
+    with open('docs/.vuepress/sample_config.js', 'r') as f:
         template = f.read()
     
-    with open('docs/config.js', 'w', encoding='utf-8') as f:
+    with open('docs/.vuepress/config.js', 'w', encoding='utf-8') as f:
             f.write(template.replace('SIDEBAR', sidebar))
 
 if __name__=="__main__":
