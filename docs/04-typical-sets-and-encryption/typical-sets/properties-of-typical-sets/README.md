@@ -9,7 +9,7 @@ A typical set \(A_{\epsilon}^{(n)}\) satisfies the following:
 <li>\(|A_{\epsilon}^{(n)}| \geq (1-\epsilon) 2^{n(H(X) - \epsilon)}\) (for large enough \(n\)).</li>
 </ol>
 <p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
-<div id="group1" style="display: none;">
+<div id="group1" style="">
 <div class="content-box">
 <ol>
 <li>This is immediate from the definition (take the logarithm and divide by \(-n\), thereby reversing the inequalities).</li>

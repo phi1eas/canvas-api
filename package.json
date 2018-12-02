@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "mathjax": "^2.7.5",
     "vuepress": "^0.7.1"
   },
   "scripts": {

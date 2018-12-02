@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="Hamming.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.43735pt" height="128.43735pt" viewBox="-42.87912 -85.55823 128.43735 128.43735 "> 
+<g transform="translate(0, 42.87912 ) scale(1,-1) translate(0,85.55823 )"> 
+             <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <path d=" M  0.0 0.0 M  42.67912 0.0 C  42.67912 23.57132 23.57132 42.67912 0.0 42.67912 C  -23.57132 42.67912 -42.67912 23.57132 -42.67912 0.0 C  -42.67912 -23.57132 -23.57132 -42.67912 0.0 -42.67912 C  23.57132 -42.67912 42.67912 -23.57132 42.67912 0.0 Z M  0.0 0.0  " style="fill:none"/>
+ <path d=" M  42.67911 0.0 M  85.35823 0.0 C  85.35823 23.57132 66.25043 42.67912 42.67911 42.67912 C  19.10779 42.67912 -0.00002 23.57132 -0.00002 0.0 C  -0.00002 -23.57132 19.10779 -42.67912 42.67911 -42.67912 C  66.25043 -42.67912 85.35823 -23.57132 85.35823 0.0 Z M  42.67911 0.0  " style="fill:none"/>
+ <path d=" M  21.33955 -42.67911 M  64.01868 -42.67911 C  64.01868 -19.10779 44.91087 0.00002 21.33955 0.00002 C  -2.23177 0.00002 -21.33957 -19.10779 -21.33957 -42.67911 C  -21.33957 -66.25043 -2.23177 -85.35823 21.33955 -85.35823 C  44.91087 -85.35823 64.01868 -66.25043 64.01868 -42.67911 Z M  21.33955 -42.67911  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-25.38817,3.00948)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.04861,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">t</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">5</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,59.97005,3.00948)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.04861,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">t</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">6</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,14.70642,12.82358)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(6.63313,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">m</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">2</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,17.29094,-62.0759)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.04861,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">t</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">7</tspan> </tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-10.90129,-29.14394)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(6.63313,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">m</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">1</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,40.31415,-29.14394)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(6.63313,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">m</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">4</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,14.70642,-18.47417)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(6.63313,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">m</tspan><tspan baseline-shift="sub"><tspan font-family="cmr" font-size="7">3</tspan></tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                </g> 
+</svg> 

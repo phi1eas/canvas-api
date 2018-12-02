@@ -12,7 +12,7 @@ For all random variables \(X,Y,Z\), the following statements are equivalent:
 <li>\(P_{XZ|Y} = P_{X|Y} \cdot P_{Z|Y}\) (that is, \(I(X;Z|Y) = 0\)). </li>
 </ol>
 <p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
-<div id="group1" style="display: none;">
+<div id="group1" style="">
 <div class="content-box">We prove that (a) \(\Rightarrow\) (b), that (b) \(\Rightarrow\) (c), and that (c) \(\Rightarrow\) (a). All other directions follow from (combinations of) these three implications.</div>
 <ul>
 <li>[(a) \(\Rightarrow\) (b):] Suppose \(X \to Y \to Z\). Then \begin{align} P_{X|YZ} &amp;= \frac{P_{XYZ}}{P_{YZ}} = \frac{P_{XY} \cdot P_{Z|XY}}{P_{YZ}} = \frac{P_{XY} \cdot P_{Z|XY}}{P_Y \cdot P_{Z|Y}}\\ &amp;= \frac{P_{XY} \cdot P_{Z|Y}}{P_Y \cdot P_{Z|Y}} = \frac{P_{XY}}{P_Y} = P_{X|Y}, \end{align} where we go from the top to the bottom line using the assumption that \(X \to Y \to Z\).</li>

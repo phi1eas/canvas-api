@@ -15,7 +15,7 @@ Let \(X\) be a random variable with image \({\cal X}\). The (Shannon) entropy \(
 <h4 style="color: #2d3b45;"><strong>Exercise</strong></h4>
 <p>Prove that \(\lim_{p \rightarrow 0^+} p \log(p) = 0\). This is a justification for the convention that we set \(P_X(x) \cdot \log P_X(x) = 0 \) whenever \(P_X(x) = 0\).</p>
 <p><span class="element_toggler" role="button" aria-controls="group3" aria-label="Toggler" aria-expanded="false"><span class="Button">Show solution</span></span></p>
-<div id="group3" style="display: none;">
+<div id="group3" style="">
 <div class="content-box">First, note that \[ \lim_{p \rightarrow 0^+} \log p = -\infty \] and \[ \lim_{p \rightarrow 0^+} \frac{1}{p} = \infty. \] So, by <a href="http://mathworld.wolfram.com/LHospitalsRule.html">l'Hopital's rule</a>, \[ \lim_{p \rightarrow 0^+} p \log p = \lim_{p \rightarrow 0^+} \frac{\log p}{1/p} = \lim_{p \rightarrow 0^+} \frac{[\log p]'}{[1/p]'} = \lim_{p \rightarrow 0^+} -\ln(2)\frac{1/p}{1/p^2} = \lim_{p \rightarrow 0^+} -\ln(2)p = 0. \]</div>
 </div>
 </div>

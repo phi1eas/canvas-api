@@ -12,7 +12,7 @@ The following is another example of a stationary process. Throw a fair coin 10 t
 <p>As an exercise, show that this process is indeed stationary.
 </p>
 <p><span class="element_toggler" role="button" aria-controls="group7" aria-label="Toggler" aria-expanded="false"><span class="Button">Hint</span></span></p>
-<div id="group7" style="display: none;">
+<div id="group7" style="">
 <div class="content-box">Observe that for all \(i\), \(X_i = X_{i+10} = X_{i+20} = ...\)</div>
 </div>
 </div>

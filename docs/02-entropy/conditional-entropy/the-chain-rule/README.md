@@ -3,10 +3,10 @@
 <h4 style="color: #bc0031;"><strong>Proposition: Chain Rule</strong></h4>
 Let \(X\) and \(Y\) be random variables. Then \[ H(XY)= H(X) + H(Y|X) \, . \]
 <p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof hint</span></span></p>
-<div id="group2" style="display: none;">
+<div id="group2" style="">
 <div class="content-box">We encourage you to try to prove this for yourself. As a starting point, write out the definition of \(H(XY)\), and rewrite the terms \(P_{XY}(x,y)\) into a conditional form in order to relate it to \(H(Y|X)\).
 <p><span class="element_toggler" role="button" aria-controls="group2sub" aria-label="Toggler" aria-expanded="false"><span class="Button">Show full proof</span></span></p>
-<div id="group2sub" style="display: none;">
+<div id="group2sub" style="">
 <div class="content-box">The chain rule is a matter of rewriting: \begin{align} H(XY) &amp;= -\sum_{x,y} P_{XY}(x,y)\log P_{XY}(x,y) \\ &amp;= -\sum_{x,y} P_{XY}(x,y)\log\bigl(P_X(x)P_{Y|X}(y|x)\bigr) \\ &amp;= -\sum_{x,y} P_{XY}(x,y) \log P_X(x) -\sum_{x,y} P_{XY}(x,y) \log P_{Y|X}(y|x) \\ &amp;= -\sum_{x}P_X(x)\log P_X(x) -\sum_{x,y} P_{XY}(x,y) \log P_{Y|X}(y|x) \\ &amp;= -\sum_{x}P_X(x)\log P_X(x) - \sum_{x} P_X(x)\sum_{y} P_{Y|X}(y|x) \log P_{Y|X}(y|x) \\ &amp;= H(X) + H(Y|X) \, . \end{align} This was to be shown.</div>
 </div>
 </div>
@@ -17,7 +17,7 @@ Let \(X\) and \(Y\) be random variables. Then \[ H(XY)= H(X) + H(Y|X) \, . \]
 <h4 style="color: #bc0031;"><strong>Corollary: Subadditivity (independence bound)</strong></h4>
 \[ H(XY)\leq H(X)+H(Y) \, . \] Equality holds iff \(X\) and \(Y\) are independent.
 <p><span class="element_toggler" role="button" aria-controls="group3" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
-<div id="group3" style="display: none;">
+<div id="group3" style="">
 <div class="content-box">\[H(XY) = H(X) + H(Y|X) \leq H(X) + H(Y),\] where the equality is due to the chain rule and the inequality is due to <a href="https://canvas.uva.nl/courses/2205/pages/bounds-on-the-conditional-entropy#condEntropyBounds%20target=">the upper bound on the conditional entropy</a> that \(H(Y|X) \leq H(Y)\) (and equal iff \(X\) and \(Y\) are independent).</div>
 </div>
 </div>

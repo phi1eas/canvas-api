@@ -3,10 +3,12 @@
 
 from canvasapi import Canvas
 from slugify import slugify
+import regex as re
 import requests
 import string
 import pathlib
 import json
+import urllib
 
 try:
     from local_settings import *
@@ -86,6 +88,12 @@ def format_filename(s, maxlen=80):
     """Remove illegal characters from string to use it as filename."""
     return slugify(s)[:maxlen]
 
+def scrape_images(body):
+    images = re.findall('https://canvas.uva.nl/courses/\d+/files/\d+/preview\?verifier=\w+', body)
+    for image in images:
+        name = re.findall('\d+', image)[1]
+        urllib.request.urlretrieve(image, 'docs/public/img/' + name)
+
 def save_item_as_doc(item, save_dir):
     # request content from Canvas
     item_content = json.loads(item.to_json())
@@ -95,11 +103,17 @@ def save_item_as_doc(item, save_dir):
     # Parse content
     content = json.loads(req.text)
     if 'body' in content:
+        scrape_images(content['body'])
+
         pathlib.Path(save_dir + '/' + format_filename(content['title'])).mkdir(exist_ok=True)
         filename = save_dir + '/' + format_filename(content['title']) + '/README.md'
         with open(filename, 'w', encoding='utf-8') as f:
-            body = content['body'].replace('\(', '$').replace('\)', '$').replace('display: none;', '')
-            f.write()
+            body = content['body']
+            body = body.replace('Show proof', 'Proof')
+            body = body.replace('display: none;', '')
+            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/docs/public/img/')
+            body = body.replace('/preview', '')
+            f.write(body)
 
         # @todo, if body contains image, download image and save locally
     return save_dir + '/' + format_filename(content['title']), content['title']
@@ -107,6 +121,7 @@ def save_item_as_doc(item, save_dir):
 def process_sidebar(sidebar):
     sidebar_list = []
     groups = []
+    titles = []
     group_items = dict()
     for link, item in sidebar:
         link = link.replace('./docs', '') + '/'
@@ -115,13 +130,14 @@ def process_sidebar(sidebar):
             group_items[group].append([link, item])
         else:
             groups.append(group)
+            titles.append(group.replace('-', ' '))
             group_items[group] = [[link, item]]
         
-    for group in groups:
-        sidebar_list.append([
-            group,
-            group_items[group]
-        ])
+    for group, title in zip(groups, titles):
+        sidebar_list.append({
+            'title': title,
+            'children': group_items[group]
+        })
 
     return json.dumps(sidebar_list)
         

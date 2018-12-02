@@ -58,10 +58,10 @@ These codes can be visualised a as binary trees, with marked codewords, as follo
 <table style="width: 100%;">
 <tbody>
 <tr>
-<td style="width: 25%; text-align: center;"><img src="https://canvas.uva.nl/courses/2205/files/129820/preview?verifier=u0q3wDA9EBKQipPVX2RfCNNAY9uXgtbLBbw9kjbl" alt="tree for code 1" width="71" height="114" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129820" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129819/preview?verifier=hywuHJIM5BhDInZ0ZztlqWVvVKtGFZBENfMa3QMX" alt="tree for code 2" width="105" height="81" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129819" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129818/preview?verifier=7WC9yv0PjxBja7ShtYC9xGxzhKKKOUri6P43j4WJ" alt="tree for code 3" width="105" height="116" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129818" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129817/preview?verifier=KD29Pa5lzef9mbgK6nxm3XPFyeQ1po5DQXZ5vFeP" alt="tree for code 4" width="105" height="132" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129817" data-api-returntype="File"></td>
+<td style="width: 25%; text-align: center;"><img src="/docs/public/img/129820?verifier=u0q3wDA9EBKQipPVX2RfCNNAY9uXgtbLBbw9kjbl" alt="tree for code 1" width="71" height="114" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129820" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="/docs/public/img/129819?verifier=hywuHJIM5BhDInZ0ZztlqWVvVKtGFZBENfMa3QMX" alt="tree for code 2" width="105" height="81" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129819" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="/docs/public/img/129818?verifier=7WC9yv0PjxBja7ShtYC9xGxzhKKKOUri6P43j4WJ" alt="tree for code 3" width="105" height="116" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129818" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="/docs/public/img/129817?verifier=KD29Pa5lzef9mbgK6nxm3XPFyeQ1po5DQXZ5vFeP" alt="tree for code 4" width="105" height="132" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129817" data-api-returntype="File"></td>
 </tr>
 <tr>
 <td style="width: 25%; text-align: center;">\(C_1\)</td>
@@ -73,7 +73,7 @@ These codes can be visualised a as binary trees, with marked codewords, as follo
 </table>
 Which of these codes are uniquely decodable? Which are prefix-free?
 <p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show solution</span></span></p>
-<div id="group2" style="display: none;">
+<div id="group2" style="">
 <div class="content-box">\(C_1\) and \(C_2\) are prefix-free, and therefore also uniquely decodable. \(C_3\) is not uniquely decodable, as \(C_3(ad) = C_3(b)\). \(C_4\) is not prefix-free, but it is uniquely decodable, since it can be decoded from right to left (it is ``<a href="https://en.wikipedia.org/wiki/Substring#Suffix">suffix</a>-free"). Note that the binary trees for the prefix-free codes \(C_1, C_2\) only have codewords at the leaves.</div>
 </div>
 </div>

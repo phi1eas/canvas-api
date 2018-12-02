@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="ZE6.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.57144pt" height="16.15564pt" viewBox="-5.83298 -2.84526 68.57144 16.15564 "> 
+<g transform="translate(0, 13.31038 ) scale(1,-1) translate(0,2.84526 )"> 
+  <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <path d=" M  0.0 0.0 L  56.90549 0.0  " style="fill:none"/>
+ <g>
+ <g stroke="rgb(95.29419%,39.99939%,9.80377%)">
+ <g fill="rgb(95.29419%,39.99939%,9.80377%)">
+ <path d=" M  0.0 0.0 M  2.84526 0.0 C  2.84526 1.57141 1.57141 2.84526 0.0 2.84526 C  -1.57141 2.84526 -2.84526 1.57141 -2.84526 0.0 C  -2.84526 -1.57141 -1.57141 -2.84526 0.0 -2.84526 C  1.57141 -2.84526 2.84526 -1.57141 2.84526 0.0 Z M  0.0 0.0  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke="rgb(95.29419%,39.99939%,9.80377%)">
+ <g fill="rgb(95.29419%,39.99939%,9.80377%)">
+ <path d=" M  56.90549 0.0 M  59.75075 0.0 C  59.75075 1.57141 58.4769 2.84526 56.90549 2.84526 C  55.33408 2.84526 54.06023 1.57141 54.06023 0.0 C  54.06023 -1.57141 55.33408 -2.84526 56.90549 -2.84526 C  58.4769 -2.84526 59.75075 -1.57141 59.75075 0.0 Z M  56.90549 0.0  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-2.5,3.53297)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+1</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,54.40549,3.53297)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+2</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+                  </g> 
+</svg> 

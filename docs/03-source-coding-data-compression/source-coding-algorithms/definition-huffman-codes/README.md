@@ -2,6 +2,6 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Binary Huffman code</strong></h4>
 Let the random variable \(X\) be given with \(\mathcal{X} = \{a,b,c,d,e\}\) and \(P_X(a) = P_X(b) = 0.25\), \(P_X(c) = 0.2\), and \(P_X(d) = P_X(e) = 0.15\). The following is a binary Huffman code for \(P_X\):
-<p><img src="https://canvas.uva.nl/courses/2205/files/180621/download?verifier=LDjbvw4rf4XN6b6uwnFZogb1OwBq8FOFc28t4rpQ" alt="huffman2-1.svg" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/180621" data-api-returntype="File"></p>
+<p><img src="/docs/public/img/180621/download?verifier=LDjbvw4rf4XN6b6uwnFZogb1OwBq8FOFc28t4rpQ" alt="huffman2-1.svg" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/180621" data-api-returntype="File"></p>
 <p>We build up the tree from left to right, pairing the symbols (or groups of symbols) with smallest (combined) probabilities at every step. The codeword for every symbol is then determined by following the branches of the tree <i>from right to left</i> until the symbol is reached. Note that this way, the symbols with the smallest probabilities get assigned the longest codewords (paths). The average codeword length for this code is \begin{align} 0.25 \cdot 2 + 0.25 \cdot 2 + 0.2 \cdot 2 + 0.15 \cdot 3 + 0.15 \cdot 3 = 2.3. \end{align} This very close to the entropy \(H(X) \approx 2.285\). The average codeword length lies between \(H(X)\) and \(H(X) + 1\).</p>
 </div>

@@ -1,0 +1,16 @@
+<p>A more sophisticated error-correcting code is the <span style="color: #bc0031;"><strong>\([7,4]\) Hamming code</strong></span>. It is a \((2^4,7)\) code, meaning that it encodes a 4-bit message (there are \(2^4\) such messages) into 7 bits. The encoding function is defined as \[ \mathtt{enc}(m_1m_2m_3m_4) = m_1m_2m_3m_4t_5t_6t_7, \] where the <span style="color: #bc0031;"><strong>parity bits</strong></span> \begin{align*} t_5 &amp;= m_1 \oplus m_2 \oplus m_3,\\ t_6 &amp;= m_2 \oplus m_3 \oplus m_4,\\ t_7 &amp;= m_1 \oplus m_3 \oplus m_4 \end{align*} are appended at the right. Note that the choice of these parity bits differs throughout the literature. Decoding is done by making sure that all parity bits check out, and if not, making the smallest possible number of bit flips such that they do. It is important to note that the parity bits themselves may have been flipped during the transmission through the channel. A visual way to perform this parity check is by using the following diagram:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/docs/public/img/218357?verifier=AUsUca6sIpRBhLxAXCuLRKLWK3OTECcfIvSSCC18" alt="Decoding Scheme for the Hamming Code" width="267" height="267" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/218357" data-api-returntype="File"></p>
+<p>For all of the three circles, the parity bit should equal the parity of the three message bits in that circle. Equivalently, the parity of all bits in a circle should be even.</p>
+<div class="content-box pad-box-mini border border-trbl border-round">
+<h4 style="color: #2d3b45;"><strong>Example</strong></h4>
+Decode the string 1010100.
+<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show solution</span></span></p>
+<div id="group1" style="">
+<div class="content-box">First, we fill in the bits into the diagram:
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/docs/public/img/218358?verifier=SLtBLtmvpOjyWa7ue1f939S3obA5XWYyXp0kn5Bg" alt="Hamming Code Example Pt 1" width="226" height="225" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/218358" data-api-returntype="File"></p>
+We see that in two of the circles, the parity bit is incorrect. This is called the <span style="color: #bc0031;"><strong>error syndrome</strong></span> (you will learn a more formal definition of the error syndrome <a title="Generalization: Linear Codes" href="https://canvas.uva.nl/courses/2205/pages/generalization-linear-codes" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/generalization-linear-codes" data-api-returntype="Page">soon</a>). By flipping only the bit \(m_2\) (which is in the intersection of the top two circles, but not the bottom one), we can fix all the parity bits:
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/docs/public/img/218359?verifier=YXuaoY9Ky99RwuCVwy3L81farWJoGSRdy5AGXLjo" alt="Hamming Code Example, Pt 2" width="225" height="225" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/218359" data-api-returntype="File"></p>
+Hence, \(\mathtt{dec}(1010100) = 1110\).</div>
+</div>
+</div>
+<p>The \([7,4]\) Hamming code can correctly decode if the codeword is corrupted in (at most) one place.</p>

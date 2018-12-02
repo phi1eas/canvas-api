@@ -10,14 +10,14 @@ The most common use of the one-time pad is for the group of binary strings under
 <h4 style="color: #bc0031;"><strong>Theorem</strong></h4>
 The one-time pad is perfectly secure.
 <p><span class="element_toggler" role="button" aria-controls="group3" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof hint</span></span></p>
-<div id="group3" style="display: none;">
+<div id="group3" style="">
 <div class="content-box">Draw a <a title="Entropy Diagrams for Three Random Variables" href="https://canvas.uva.nl/courses/2205/pages/entropy-diagrams-for-three-random-variables" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/entropy-diagrams-for-three-random-variables" data-api-returntype="Page">three-variable entropy diagram</a> for the random variables \(M\), \(K\), and \(C\). Use the fact that the key\(K\) is picked uniformly at random, and the setup assumption that it is independent from the message \(M\). Then deduce from the diagram that \(I(M;C) = 0\), i.e., the message and ciphertext share no information.
 <p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show full proof</span></span></p>
-<div id="group2" style="display: none;">
+<div id="group2" style="">
 <div class="content-box">Write \(n = \log|G|\). We need to verify that \(I(M;C) = 0\). We do so using a three-variable entropy diagram. We can already fill in the values \(H(K) = n = \log|G|\) (because \(K\) is uniformly distributed), \(H(M|CK) = H(C|MK) = H(K|MC) = 0\) (because each random variable is a function of the other two), and \(I(M;K) = 0\) (this is our setup assumption). 
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.uva.nl/courses/2205/files/212323/preview?verifier=f3awyjak57T8kjVa4pwsDGGO09RgiLkpj8yovjXX" alt="Entropy diagram for one-time pad" width="240" height="300" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/212323" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/docs/public/img/212323?verifier=f3awyjak57T8kjVa4pwsDGGO09RgiLkpj8yovjXX" alt="Entropy diagram for one-time pad" width="240" height="300" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/212323" data-api-returntype="File"></p>
 Note that the area of \(I(M;K) = I(M;K|C) + R(M;K;C)\) (shaded orange in the picture) as a whole is 0, but that does not mean that \(I(M;K|C)\) and \(R(M;K;C)\) themselves are zero, because \(R(M;K;C)\) can be negative. We can conclude that there must be some (non-negative) real number \(a \geq 0\) such that \(I(M;K|C) = a\) and \(R(M;K;C) = -a\). As the entropy of \(K\) has to be \(H(K)=n\), we can furthermore conclude that \(I(K;C|M) = n\). From \(I(M;C) \geq 0\) follows that \(x \geq a\), and because \(H(C) \leq n\), it follows that \(x \leq a\) and hence, \(x=a\) and \(I(M;C)=0\), as desired.
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.uva.nl/courses/2205/files/212319/preview?verifier=Yc3fTLxRyRqRuTqjQFq4T13K00DjEQFzKFUmHprl" alt="Entropy diagram for one-time pad" width="247" height="300" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/212319" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/docs/public/img/212319?verifier=Yc3fTLxRyRqRuTqjQFq4T13K00DjEQFzKFUmHprl" alt="Entropy diagram for one-time pad" width="247" height="300" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/212319" data-api-returntype="File"></p>
 </div>
 </div>
 </div>
