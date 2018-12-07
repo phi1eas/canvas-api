@@ -2,7 +2,7 @@
 <div id="defPositivity" class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition: Positivity of entropy</strong></h4>
 Let \(X\) be a random variable with image \({\cal X}\). Then \[ 0 \leq H(X). \] Equality holds iff there exists \(x\in {\cal X}\) with \(P_X(x)=1\) (and thus \(P_X(x')=0\) for all \(x' \neq x\)).
-<p><span class="element_toggler" role="button" aria-controls="group1a" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1a" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group1a" style="">
 <div class="content-box">For all \(x \in \mathcal\{X\}\), we have \(0 \leq P_X(x) \leq 1\), and hence \(- P_X(x) \log P_X(x) \geq 0\). So \(H(X)\), which is the sum of those terms, is always nonnegative. To characterize the condition for equality, note that by definition of Shannon entropy, \(H(X) = 0\) when \(P_X(x) = 1\) for some \(x\). On the other hand, if \(H(X) = 0\) then for any \(x\) with \(P_X(x) &gt; 0\) it must be that \(\log(1/P_X(x)) = 0\) and hence \(P_X(x) = 1\).</div>
 </div>
@@ -10,7 +10,7 @@ Let \(X\) be a random variable with image \({\cal X}\). Then \[ 0 \leq H(X). \] 
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition: Upper bound on entropy</strong></h4>
 <p>Let \(X\) be a random variable with image \({\cal X}\). Then \[H(X) \leq \log(|{\cal X}|). \] Equality holds iff \(P_X(x)=1/|{\cal X}|\) for all \(x\in {\cal X}\).</p>
-<p><span class="element_toggler" role="button" aria-controls="group1c" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof hint</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1c" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof hint</span></span></p>
 <div id="group1c" style="">
 <div class="content-box">
 <p>We encourage you to try to find the proof for this proposition yourself. As a first step, you may want to write out the definition of \(H(X)\) apply Jensen's inequality.</p>
@@ -24,7 +24,7 @@ Let \(X\) be a random variable with image \({\cal X}\). Then \[ 0 \leq H(X). \] 
 </div>
 </div>
 <p>When working with explicit distributions, one can always compute the entropy of a random variable by filling in all the probabilities in the definition of entropy. However, in some cases there is some structure to the distribution. In those cases, the entropy can be computed in a smarter and faster way. This is especially useful when you are computing the entropy by hand, but can also help when analysing the entropy of a more complex distribution containing some unknown variables.</p>
-<p><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="Video-2018-06-27-12-10-50_Smart ways to compute entropy.MP4" href="/docs/public/img/123933/download?verifier=tMDZiWNI4EaLKcShQVRecTeILqn5JIq06OfWCNCW" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/123933" data-api-returntype="File">Video-2018-06-27-12-10-50_Smart ways to compute entropy.MP4</a></p>
+<p><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="Video-2018-06-27-12-10-50_Smart ways to compute entropy.MP4" href="/img/123933/download?verifier=tMDZiWNI4EaLKcShQVRecTeILqn5JIq06OfWCNCW" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/123933" data-api-returntype="File">Video-2018-06-27-12-10-50_Smart ways to compute entropy.MP4</a></p>
 <p>In general, the entropy of a random variable with probabilities \(p_1, \ldots, p_n\) can be expressed as \[ H(p_1, \ldots, p_k, p_{k+1}, \ldots, p_n) = h\left(\sum_{i=1}^k p_i\right) \ \ + \ \ \left(\sum_{i=1}^k p_i\right) \cdot H\left(\frac{p_1}{\sum_{i=1}^k p_i}, 
 \ldots, \frac{p_k}{\sum_{i=1}^k p_i} \right) \ \ + \ \ \left(\sum_{i=k+1}^n p_i\right) \cdot H\left( \frac{p_{k+1}}{\sum_{i=k+1}^n p_i} , \ldots, \frac{p_n}{\sum_{i=k+1}^n p_i} \right).\]</p>
 <p>You can of course use this trick multiple times in a row to break down the entropies on the right-hand side of this equation even further.</p>

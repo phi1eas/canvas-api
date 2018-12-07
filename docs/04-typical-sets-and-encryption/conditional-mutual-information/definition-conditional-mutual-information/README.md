@@ -7,7 +7,7 @@ Let \(X,Y,Z\) be random variables. Then the conditional mutual information of \(
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Alternative definition</strong></h4>
 Let \(X,Y,Z\) be random variables. Then \[ I(X;Y| Z)= H(X|Z)- H(X|YZ) \, . \]
-<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group1" style="">
 <div class="content-box">\begin{align} I(X;Y|Z) &amp;= \sum_{z \in \mathcal{Z}} P_Z(z) I(X;Y|Z=z) &amp;\text{(by definition)} \\ &amp;= \sum_{z \in \mathcal{Z}} P_Z(z) (H(X|Z=z) - H(X|Y,Z=z)) &amp;\text{(definition of mutual information)} \\ &amp;= \sum_{z \in \mathcal{Z}} P_Z(z) H(X|Z=z) - \sum_{z \in \mathcal{Z}} P_Z(z) H(X|Y,Z=z) \\ &amp;= H(X|Z) - H(X|YZ). \end{align}</div>
 </div>

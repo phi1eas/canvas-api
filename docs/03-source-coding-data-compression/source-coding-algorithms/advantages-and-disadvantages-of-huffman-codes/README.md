@@ -2,7 +2,7 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Optimality of Huffman codes</strong></h4>
 Let \(P_X\) be a source, and let \(C^*\) be the associated Huffman code. For any other uniquely decodable code \(C'\) with the same alphabet, \[ \ell_{C^*}(P_X) \leq \ell_{C'}(P_X). \]
-<p><span class="element_toggler" role="button" aria-controls="group10" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group10" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group10" style="">
 <div class="content-box">see <a href="http://onlinelibrary.wiley.com/book/10.1002/0471200611" target="_blank">Cover/Thomas</a>, Section 5.8</div>
 </div>

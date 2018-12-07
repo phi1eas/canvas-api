@@ -2,12 +2,12 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Shannon capacity of a graph</strong></h4>
 The Shannon capacity of a graph is \[c(G) := \sup_{n \in \mathbb{N}} \frac{\log \alpha(G^{\boxtimes n})}{n}.\]</div>
-<p>The Shannon capacity represents the <em>maximum number of bits per channel</em> use that can be perfectly communicated over a channel with confusability graph \(G\). Note that our definition in terms of message bits differs from the definition more commonly used in the literature (and on <a href="https://en.wikipedia.org/wiki/Shannon_capacity_of_a_graph">wikipedia</a>) about zero-error communication where the capacity is defined without the log as \( \sup_{n \in \mathbb{N}}  \sqrt[n]{\alpha(G^{\boxtimes n}) } \), thus measuring the maximum number of actual messages (and not bits) per channel use that can be perfectly communicated.</p>
+<p>The Shannon capacity represents the <em>maximum number of bits per channel</em> <em>use</em> that can be perfectly communicated over a channel with confusability graph \(G\). Note that our definition in terms of message bits differs from the definition more commonly used in the literature (and on <a href="https://en.wikipedia.org/wiki/Shannon_capacity_of_a_graph">wikipedia</a>) about zero-error communication where the capacity is defined without the log as \( \sup_{n \in \mathbb{N}}  \sqrt[n]{\alpha(G^{\boxtimes n}) } \), thus measuring the maximum number of actual messages (and not bits) per channel use that can be perfectly communicated.</p>
 <p>Intuitively, allowing more channel uses can only increase the rate. This is reflected by the fact that we can replace the supremum with a limit, as captured by the following lemma.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition</strong></h4>
 \[ c(G) = \lim_{n \to \infty} \frac{\log \alpha(G^{\boxtimes n})}{n}. \]
-<p><span class="element_toggler" role="button" aria-controls="group9" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group9" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group9" style="">
 <div class="content-box">First, note that \(\alpha(G^{\boxtimes (k+\ell)}) \geq \alpha(G^{\boxtimes k})\alpha(G^{\boxtimes \ell})\) (you showed this inequality in the previous quiz). It then follows that \[ \log \alpha(G^{\boxtimes(k+\ell)}) \geq \log \alpha(G^{\boxtimes k}) + \log \alpha(G^{\boxtimes \ell}), \] and so the sequence \((\log \alpha(G^{\boxtimes n}))_{n \in \mathbb{N}}\) is superadditive. Then by <a href="https://en.wikipedia.org/wiki/Superadditivity">Fekete's lemma</a>, \[ \lim_{n \to \infty} \frac{\log \alpha(G^{\boxtimes n})}{n} \] exists and is equal to the supremum.</div>
 </div>

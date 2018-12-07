@@ -1,5 +1,5 @@
 <p><iframe src="https://player.vimeo.com/video/296892943?color=ff9933" width="640" height="360" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
-<p>(Download the <a class="instructure_file_link instructure_scribd_file" title="IT Content Intro.pdf" href="/docs/public/img/476888/download?verifier=39jFWrVkAoqFxywKMEyTpX05EebOX3HGKYqQGqWc&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/476888" data-api-returntype="File">slides from the video</a> to "click on the links")</p>
+<p>(Download the <a class="instructure_file_link instructure_scribd_file" title="IT Content Intro.pdf" href="/img/476888/download?verifier=39jFWrVkAoqFxywKMEyTpX05EebOX3HGKYqQGqWc&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/476888" data-api-returntype="File">slides from the video</a> to "click on the links")</p>
 <p>For a detailed overview of course content and learning objectives, see <a href="http://studiegids.uva.nl/xmlpages/page/2018-2019-en/search-course/course/62683">Studiegids</a>. </p>
 <p>The content of this course is organized into seven modules (one for each week the course runs, except the last week in which you will make a final exam):</p>
 <h4>01 Probability Theory</h4>

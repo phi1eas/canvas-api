@@ -111,7 +111,7 @@ def save_item_as_doc(item, save_dir):
             body = content['body']
             body = body.replace('Show proof', 'Proof')
             body = body.replace('display: none;', '')
-            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/docs/public/img/')
+            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/img/')
             body = body.replace('/preview', '')
             f.write(body)
 

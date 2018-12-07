@@ -2,7 +2,7 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Corollary: Chain rule for mutual information</strong></h4>
 Let \(W,X,Y\) and \(Z\) be random variables. Then \[ I(WX;Y|Z) = I(X;Y|Z)+ I(W;Y|ZX) \, . \]
-<p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof hint</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof hint</span></span></p>
 <div id="group2" style="">
 <div class="content-box">Apply the <a title="Conditional Entropy" href="https://canvas.uva.nl/courses/2205/pages/the-chain-rule#corGeneralizedChainRule" data-api-returntype="Page" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/the-chain-rule%23corGeneralizedChainRule">generalized chain rule</a>.
 <p><span class="element_toggler" role="button" aria-controls="group2sub" aria-label="Toggler" aria-expanded="false"><span class="Button">Show full proof</span></span></p>

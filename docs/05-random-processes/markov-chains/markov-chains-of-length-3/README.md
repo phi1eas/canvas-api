@@ -11,7 +11,7 @@ For all random variables \(X,Y,Z\), the following statements are equivalent:
 <li>\(Z \to Y \to X\),</li>
 <li>\(P_{XZ|Y} = P_{X|Y} \cdot P_{Z|Y}\) (that is, \(I(X;Z|Y) = 0\)). </li>
 </ol>
-<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group1" style="">
 <div class="content-box">We prove that (a) \(\Rightarrow\) (b), that (b) \(\Rightarrow\) (c), and that (c) \(\Rightarrow\) (a). All other directions follow from (combinations of) these three implications.</div>
 <ul>

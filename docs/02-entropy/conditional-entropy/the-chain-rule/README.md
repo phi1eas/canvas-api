@@ -2,7 +2,7 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition: Chain Rule</strong></h4>
 Let \(X\) and \(Y\) be random variables. Then \[ H(XY)= H(X) + H(Y|X) \, . \]
-<p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof hint</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof hint</span></span></p>
 <div id="group2" style="">
 <div class="content-box">We encourage you to try to prove this for yourself. As a starting point, write out the definition of \(H(XY)\), and rewrite the terms \(P_{XY}(x,y)\) into a conditional form in order to relate it to \(H(Y|X)\).
 <p><span class="element_toggler" role="button" aria-controls="group2sub" aria-label="Toggler" aria-expanded="false"><span class="Button">Show full proof</span></span></p>
@@ -16,7 +16,7 @@ Let \(X\) and \(Y\) be random variables. Then \[ H(XY)= H(X) + H(Y|X) \, . \]
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Corollary: Subadditivity (independence bound)</strong></h4>
 \[ H(XY)\leq H(X)+H(Y) \, . \] Equality holds iff \(X\) and \(Y\) are independent.
-<p><span class="element_toggler" role="button" aria-controls="group3" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group3" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group3" style="">
 <div class="content-box">\[H(XY) = H(X) + H(Y|X) \leq H(X) + H(Y),\] where the equality is due to the chain rule and the inequality is due to <a href="https://canvas.uva.nl/courses/2205/pages/bounds-on-the-conditional-entropy#condEntropyBounds%20target=">the upper bound on the conditional entropy</a> that \(H(Y|X) \leq H(Y)\) (and equal iff \(X\) and \(Y\) are independent).</div>
 </div>

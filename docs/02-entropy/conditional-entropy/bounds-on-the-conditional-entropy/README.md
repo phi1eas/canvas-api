@@ -2,7 +2,7 @@
 <div id="condEntropyBounds" class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition</strong></h4>
 Let \(X\) and \(Y\) be random variables with respective images \({\cal X}\) and \(\cal Y\). Then \[ 0 \leq H(X|Y) \leq H(X) \] Equality on the left-hand side holds iff \(X\) is determined by \(Y\), i.e., for all \(y\in {\cal Y}\), there is an \(x\in {\cal X}\) such that \(P_{X|Y}(x|y)=1\). Equality on the right-hand side holds iff \(X\) and \(Y\) are independent.
-<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group1" style="">
 <div class="content-box">
 <p>The lower bound follows trivially from the definition and from <a title="Properties of Shannon Entropy" href="https://canvas.uva.nl/courses/2205/pages/properties-of-shannon-entropy#defPositivity" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/properties-of-shannon-entropy%23defPositivity" data-api-returntype="Page">the positivity of entropy</a>, and so does the characterization of when \(H(X|Y) = 0\).</p>

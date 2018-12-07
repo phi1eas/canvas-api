@@ -15,15 +15,15 @@ The entropy rate given the past \(H'(\{X_i\})\) of a stochastic process \(\{X_i\
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Cesàro mean</strong></h4>
 If \(\lim\limits_{n \to \infty} a_n = a\) and \(b_n = \frac{1}{n} \sum_{i=1}^n a_i\), then \(\lim\limits_{n \to \infty} b_n = a\).
-<p><span class="element_toggler" role="button" aria-controls="group16" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group16" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group16" style="">
-<div class="content-box"><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="05 Cesàro mean.mp4" href="/docs/public/img/591842/download?verifier=bJBODLVOVbFyfIIBKD8lASYPFGfMpWe6WSY09mSH&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/591842" data-api-returntype="File">05 Cesàro mean.mp4</a></div>
+<div class="content-box"><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="05 Cesàro mean.mp4" href="/img/591842/download?verifier=bJBODLVOVbFyfIIBKD8lASYPFGfMpWe6WSY09mSH&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/591842" data-api-returntype="File">05 Cesàro mean.mp4</a></div>
 </div>
 </div>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem</strong></h4>
 For a stationary process \(\{X_i\}\), it holds that \(H(\{X_i\}) = H'(\{X_i\})\) (and both limits exist).
-<p><span class="element_toggler" role="button" aria-controls="group17" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group17" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group17" style="">
 <div class="content-box">We first show that \(H(X_n \mid X_1, \dots, X_{n-1})\) is a non-increasing function of \(n\): \begin{align} H(X_{n}|X_1, \dots, X_{n-1}) &amp;= H(X_{n+1}|X_2, \dots, X_{n}) &amp;\text{(stationary)}\\ &amp;\geq H(X_{n+1}|X_1, X_2, \ldots, X_{n}) &amp;(\href{https://canvas.uva.nl/courses/2205/pages/bounds-on-the-conditional-entropy}{\text{Bounds on the Conditional Entropy}}). \end{align} Combined with the fact that \(H(X_n \mid X_1, \dots, X_{n-1})\) is lower bounded by 0, this implies that the limit \(\lim_{n \to \infty} H(X_n \mid X_1, \dots, X_{n-1})\) must exist. It is \(H'(\{X_i\})\). It remains to show that \(H(\{X_i\}) = H'(\{X_i\})\): \begin{align} H(\{X_i\}) &amp;= \lim_{n \to \infty} \frac{1}{n} H(X_1, \dots, X_n)\\ &amp;= \lim_{n \to \infty} \frac{1}{n} \sum_{i=1}^n H(X_i \mid X_1, \dots, X_{i-1})\\ &amp;= H'(\{X_i\}). \end{align} The final equality follows from the Cesaro mean.</div>
 </div>

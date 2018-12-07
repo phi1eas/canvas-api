@@ -12,7 +12,7 @@ The random variables \(X_1, X_2, \dots, X_n\) form a Markov chain (notation: \(X
 <li>\(X_1 \to X_2X_3 \to X_4 \)</li>
 <li>\( X_4 \to X_3 \to X_2 \to X_1\)</li>
 </ol>
-<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Show proof</span></span></p>
+<p><span class="element_toggler" role="button" aria-controls="group1" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group1" style="">
 <div class="content-box">left as exercise</div>
 </div>
