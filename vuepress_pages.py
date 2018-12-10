@@ -88,7 +88,7 @@ def scrape_images(body):
     images = re.findall('https://canvas.uva.nl/courses/\d+/files/\d+/preview\?verifier=\w+', body)
     for image in images:
         name = re.findall('\d+', image)[1]
-        urllib.request.urlretrieve(image, VUEPRESS_DIR + '/public/assets/img/' + name)
+        urllib.request.urlretrieve(image, VUEPRESS_DIR + '/.vuepress/public/assets/img/' + name)
 
 def save_item_as_doc(item, save_dir):
     # request content from Canvas
@@ -108,9 +108,9 @@ def save_item_as_doc(item, save_dir):
             body = content['body']
             body = body.replace('Show proof', 'Proof')
             body = body.replace('display: none;', '')
-            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '')
-            body = re.sub(r'\?verifier=\w+"', '"', body)
-            body = body.replace('/preview', '')
+            # body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/assets/img/')
+            # body = re.sub(r'\?verifier=\w+"', '"', body)
+            # body = body.replace('/preview', '')
             f.write(body)
 
         # @todo, if body contains image, download image and save locally
@@ -152,14 +152,18 @@ def main():
         if not dirpath in ['.vuepress', 'README.md']:
             # Ignore files
             shutil.rmtree(VUEPRESS_DIR + '/' + dirpath)
+    
+    shutil.rmtree(VUEPRESS_DIR + '/.vuepress/public', True)
+    shutil.rmtree(VUEPRESS_DIR + '/.vuepress/dist', True)
 
     # Create dir to save html files
     pathlib.Path(VUEPRESS_DIR).mkdir(exist_ok=True)
 
     # Create images dir 
-    pathlib.Path(VUEPRESS_DIR + '/public').mkdir(exist_ok=True)
-    pathlib.Path(VUEPRESS_DIR + '/public/assets').mkdir(exist_ok=True)
-    pathlib.Path(VUEPRESS_DIR + '/public/assets/img').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/.vuepress/public').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/.vuepress/public/assets').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/.vuepress/public/assets/img').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/.vuepress/public/assets/img').mkdir(exist_ok=True)
 
     sidebar = []
     for module in modules:
