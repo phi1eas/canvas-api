@@ -7,7 +7,7 @@ The function \(f : \mathcal{D} \to \mathbb{R}\) is convex if for all \(x_1, x_2 
 <p><iframe src="https://esc.fnwi.uva.nl/blend/information-theory/interactive-graphs/definition-of-convexity-concavity.htm" width="1010" height="850"></iframe></p>
 <h3>Convex or concave? MacKay's Mnemonic</h3>
 <p>David MacKay has a great way of remembering "which way" convex and concave functions go, namely by noticing the following. When pronouncing the word "convex", one could continue to say "smile", while pronouncing the word "concave", it could be followed by the word "frown".</p>
-<p><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="Video-2018-05-16-12-30-51_MacKays mnemonic.MP4" href="/img/123923/download?verifier=AEFfJEKv3GeUfdocb3NI5vKenxMjeBPCTVdgzBPy&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/123923" data-api-returntype="File">Video-2018-05-16-12-30-51_MacKays mnemonic.MP4</a></p>
+<p><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="Video-2018-05-16-12-30-51_MacKays mnemonic.MP4" href="123923/download?verifier=AEFfJEKv3GeUfdocb3NI5vKenxMjeBPCTVdgzBPy&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/123923" data-api-returntype="File">Video-2018-05-16-12-30-51_MacKays mnemonic.MP4</a></p>
 <p>The following proposition establishes a formal method of proving the convexity of a function.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition</strong></h4>

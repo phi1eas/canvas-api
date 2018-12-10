@@ -17,7 +17,7 @@ The entropy rate given the past \(H'(\{X_i\})\) of a stochastic process \(\{X_i\
 If \(\lim\limits_{n \to \infty} a_n = a\) and \(b_n = \frac{1}{n} \sum_{i=1}^n a_i\), then \(\lim\limits_{n \to \infty} b_n = a\).
 <p><span class="element_toggler" role="button" aria-controls="group16" aria-label="Toggler" aria-expanded="false"><span class="Button">Proof</span></span></p>
 <div id="group16" style="">
-<div class="content-box"><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="05 Cesàro mean.mp4" href="/img/591842/download?verifier=bJBODLVOVbFyfIIBKD8lASYPFGfMpWe6WSY09mSH&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/591842" data-api-returntype="File">05 Cesàro mean.mp4</a></div>
+<div class="content-box"><a id="media_comment_maybe" class="instructure_file_link instructure_video_link" title="05 Cesàro mean.mp4" href="591842/download?verifier=bJBODLVOVbFyfIIBKD8lASYPFGfMpWe6WSY09mSH&amp;wrap=1" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/591842" data-api-returntype="File">05 Cesàro mean.mp4</a></div>
 </div>
 </div>
 <div class="content-box pad-box-mini border border-trbl border-round">

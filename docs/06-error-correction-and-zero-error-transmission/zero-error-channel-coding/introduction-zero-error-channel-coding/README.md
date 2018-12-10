@@ -2,12 +2,12 @@
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example</strong></h4>
 Consider the following channel:
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/img/329556?verifier=pnJGksY1cd9XK6OJXCyflRA94mXUqejMlG7N4Rld" alt="A channel with two inputs and three outputs" width="108" height="102" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329556" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="329556" alt="A channel with two inputs and three outputs" width="108" height="102" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329556" data-api-returntype="File"></p>
 We can send two messages, \(m_1\) and \(m_2\), over the channel by defining \(\mathtt{enc}(m_1) = a\) and \(\mathtt{enc}(m_2) = b\). The decoding is defined as \(\mathtt{dec}(1) = m_1\), and \(\mathtt{dec}(2) = \mathtt{dec}(3) = m_2\).</div>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 id="noisy" style="color: #2d3b45;"><strong>Example: Noisy typewriter</strong></h4>
 The noisy typewriter channel sends the letters a through e, but with some nonzero probability, it sends the adjacent letter instead. It is defined as follows:
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/img/329557?verifier=83Uy1bWyGDxlxBEsIi2th3qScfowUEbu7STtFyIv" alt="The noisy typewriter" width="147" height="121" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329557" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="329557" alt="The noisy typewriter" width="147" height="121" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329557" data-api-returntype="File"></p>
 How many messages can you send error-free over this channel?
 <p><span class="element_toggler" role="button" aria-controls="group2" aria-label="Toggler" aria-expanded="false"><span class="Button">Show solution</span></span></p>
 <div id="group2" style="">

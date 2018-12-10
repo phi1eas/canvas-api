@@ -6,7 +6,7 @@ Let us reconsider <a title="Introduction: Zero-Error Channel Coding" href="https
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Binary symmetric channel</strong></h4>
 The confusability graph of the non-trivial binary symmetric channel (BSC) is \(C_2\):
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/img/329561?verifier=QZPEB1MQ6MfhT7UN9qSs2U9oF9XIJeZy25U88EWQ" alt="Confusability graph of the BSC" width="91" height="22" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329561" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="329561" alt="Confusability graph of the BSC" width="91" height="22" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329561" data-api-returntype="File"></p>
 This graph is also known as \(K_2\), the <span style="color: #bc0031;"><strong>complete graph</strong></span> of size 2. \(K_2 \boxtimes K_2\) is the complete graph on 4 vertices \(K_4\):
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/img/329560?verifier=YFRV5IEqQKLTTH2Z5AA32tiCLqjlLrNvDXWMbZ2M" alt="Confusability graph of two uses of the BSC" width="112" height="121" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329560" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="329560" alt="Confusability graph of two uses of the BSC" width="112" height="121" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329560" data-api-returntype="File"></p>
 In this case, using the channel twice does not help: the independence number of both graphs is 1, and the rate of any error-free code is therefore zero.</div>

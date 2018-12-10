@@ -22,7 +22,7 @@ What is the capacity (in terms of \(f\)) of a binary symmetric channel with para
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Capacity of a BEC</strong></h4>
 <p>Consider the binary erasure channel (BEC) with \(\mathcal{X} = \{0,1\}\) and \(\mathcal{Y} = \{0,1,\bot\}\), where \(\bot\) is the <span style="color: #bc0031;"><strong>erasure symbol</strong></span>, and \(\epsilon \in [0,1]\) is the <span style="color: #bc0031;"><strong>erasure probability</strong></span>:</p>
-<p style="text-align: center;"><img src="/img/388658?verifier=E9ranqn35eYPibIXdJ5XcEG1CWqNXu5KVumwLJUd" alt="A binary erasure channel" width="240" height="140" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/388658" data-api-returntype="File"></p>
+<p style="text-align: center;"><img src="388658" alt="A binary erasure channel" width="240" height="140" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/388658" data-api-returntype="File"></p>
 <p>What is the channel capacity of the BEC, as a function of \(\epsilon\)?</p>
 <p><span class="element_toggler" role="button" aria-controls="group2a" aria-label="Toggler" aria-expanded="false"><span class="Button">Show hint</span></span></p>
 <div id="group2a" style="">

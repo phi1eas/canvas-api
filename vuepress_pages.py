@@ -4,11 +4,7 @@
 from canvasapi import Canvas
 from slugify import slugify
 import regex as re
-import requests
-import string
-import pathlib
-import json
-import urllib
+import requests, shutil, string, pathlib, json, urllib, os
 
 try:
     from local_settings import *
@@ -92,7 +88,7 @@ def scrape_images(body):
     images = re.findall('https://canvas.uva.nl/courses/\d+/files/\d+/preview\?verifier=\w+', body)
     for image in images:
         name = re.findall('\d+', image)[1]
-        urllib.request.urlretrieve(image, 'docs/public/img/' + name)
+        urllib.request.urlretrieve(image, VUEPRESS_DIR + '/public/assets/img/' + name)
 
 def save_item_as_doc(item, save_dir):
     # request content from Canvas
@@ -103,20 +99,22 @@ def save_item_as_doc(item, save_dir):
     # Parse content
     content = json.loads(req.text)
     if 'body' in content:
+        path = save_dir + '/' + format_filename(content['title'])
+        pathlib.Path(path).mkdir(exist_ok=True)
+        
         scrape_images(content['body'])
-
-        pathlib.Path(save_dir + '/' + format_filename(content['title'])).mkdir(exist_ok=True)
-        filename = save_dir + '/' + format_filename(content['title']) + '/README.md'
+        filename = path + '/README.md'
         with open(filename, 'w', encoding='utf-8') as f:
             body = content['body']
             body = body.replace('Show proof', 'Proof')
             body = body.replace('display: none;', '')
-            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/img/')
+            body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '')
+            body = re.sub(r'\?verifier=\w+"', '"', body)
             body = body.replace('/preview', '')
             f.write(body)
 
         # @todo, if body contains image, download image and save locally
-    return save_dir + '/' + format_filename(content['title']), content['title']
+    return path, content['title']
 
 def process_sidebar(sidebar):
     sidebar_list = []
@@ -148,9 +146,20 @@ def main():
     # Load course content
     course = canvas.get_course(COURSE)
     modules = course.get_modules()
+    
+    # Empty dir s.t. it is rebuilded each run
+    for dirpath in os.listdir(VUEPRESS_DIR):
+        if not dirpath in ['.vuepress', 'README.md']:
+            # Ignore files
+            shutil.rmtree(VUEPRESS_DIR + '/' + dirpath)
 
     # Create dir to save html files
     pathlib.Path(VUEPRESS_DIR).mkdir(exist_ok=True)
+
+    # Create images dir 
+    pathlib.Path(VUEPRESS_DIR + '/public').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/public/assets').mkdir(exist_ok=True)
+    pathlib.Path(VUEPRESS_DIR + '/public/assets/img').mkdir(exist_ok=True)
 
     sidebar = []
     for module in modules:
