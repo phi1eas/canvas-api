@@ -1,3 +1,5 @@
+# Markov Process: Time Invariance, Finite State, Transition Matrix
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Markov process</strong></h4>
 A stochastic process is a Markov process (or: Markov chain) if for all \(n \in \mathbb{N}\), \[ X_1 \to X_2 \to \cdots \to X_n. \]</div>

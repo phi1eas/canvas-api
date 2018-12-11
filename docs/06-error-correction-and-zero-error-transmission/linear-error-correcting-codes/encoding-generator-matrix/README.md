@@ -1,3 +1,5 @@
+# Encoding: Generator Matrix
+
 <p>The encoding procedure of a linear code is nicely captured by the generator matrix:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Generator matrix</strong></h4>

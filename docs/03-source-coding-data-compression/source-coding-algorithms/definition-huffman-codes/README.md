@@ -1,3 +1,5 @@
+# Definition: Huffman Codes
+
 <p>Shannon's source-coding theorem shows us that in theory, the minimal code length for a source \(P_X\) is roughly \(H(X)\). In this section we will investigate <span style="color: #bc0031;"><strong>Huffman codes</strong></span>, which provide an explicit and neat construction for optimal prefix-free codes. A binary Huffman code for a source \(P_X\) is constructed by iteratively pairing the two symbols with the smallest probability together, building a binary tree on the way. This is best explained by example:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Binary Huffman code</strong></h4>

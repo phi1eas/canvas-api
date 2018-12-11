@@ -1,3 +1,5 @@
+# The Weak Law of Large Numbers
+
 <p>The following general law states that if we sample several times from the same distribution, the average converges (in probability) to the expected value of the distribution.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Weak Law of Large Numbers</strong></h4>

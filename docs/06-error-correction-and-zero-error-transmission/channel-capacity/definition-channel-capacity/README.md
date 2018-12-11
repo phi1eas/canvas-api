@@ -1,3 +1,5 @@
+# Definition: Channel Capacity
+
 <p>We just discovered that for some noisy channels, zero-error communication is very hard, or even impossible. For example, if Alice and Bob have to communicate over a <a title="Definition: Discrete Channel" href="https://canvas.uva.nl/courses/2205/pages/definition-discrete-channel" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/definition-discrete-channel" data-api-returntype="Page">binary symmetric channel (BSC)</a> that has non-zero bit-flip probability, they cannot hope to do any zero-error communication, because the Shannon capacity of the BSC's confusability graph is zero.</p>
 <p>We also saw that error-correcting codes can help deal with such inherently noisy channels. Even though the communication error may not become zero, an error-correcting code can increase the probability of receiving the correct message. It does come at a cost, however, because the codewords are longer than the original messages, and so the amount of information that is transmitted <i>per channel use</i> does not necessarily increase.</p>
 <p>In this final part of the module, we explore the limits of how much information can be sent over a channel if a small error is allowed. Central to our study will be the concept of channel capacity. It reflects the maximum amount of information that could <i>in principle</i> be communicated with a single use of a channel. In the next module, we will see how well that theoretical limit can be approached with actual error-correcting codes.</p>
@@ -36,5 +38,5 @@ What is the capacity (in terms of \(f\)) of a binary symmetric channel with para
 </div>
 <p>If a channel is memoryless, then using it more than once does not increase the capacity <i>per transmission</i>. Note that this is different from the zero-error setting, where multiple channel uses can in fact increase the efficiency of getting information across! This is formally captured in the following lemma, which we state without proof:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
-<h4 style="color: #bc0031;"><strong>Lemma: Multiple Channel Uses</strong></h4>
+<h4 style="color: #bc0031;" id="lemma"><strong>Lemma: Multiple Channel Uses</strong></h4>
 Let \(X_1, ..., X_n =: X^n\) be \(n\) random variables. Let \(Y^n\) be the result of passing \(X^n\) through a discrete memoryless channel of capacity \(C\). Then for any joint distribution \(P_{X^n}\), \[ I(X^n,Y^n) \leq n \cdot C. \]</div>

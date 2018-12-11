@@ -1,3 +1,5 @@
+# Definition: Prefix-freeness
+
 <p>One convenient way to guarantee that a code is unique decodable is to require it to be prefix-free:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Prefix-free code</strong></h4>

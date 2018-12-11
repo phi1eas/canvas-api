@@ -1,3 +1,5 @@
+# Definition: Ternary Huffman Codes
+
 <p>We saw how to construct <i>binary</i> Huffman codes. We can also generate Huffman codes for larger alphabets, resulting in ternary, quaternary, or, more generally, <span style="color: #bc0031;"><strong>\(d\)-ary Huffman codes</strong></span>.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Ternary Huffman code</strong></h4>

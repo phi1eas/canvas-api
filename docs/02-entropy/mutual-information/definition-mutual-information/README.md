@@ -1,3 +1,5 @@
+# Definition: Mutual Information
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Mutual information</strong></h4>
 Let \(X\) and \(Y\) be random variables. The mutual information \(I(X;Y)\) of \(X\) and \(Y\) is defined as \[ I(X;Y)= H(X) - H(X|Y). \]</div>

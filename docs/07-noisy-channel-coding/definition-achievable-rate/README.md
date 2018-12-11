@@ -1,3 +1,5 @@
+# Definition: Achievable Rate
+
 <p>As stated, the channel capacity reflects the maximum amount of information that could <i>in principle</i> be sent over a noisy channel per use of that channel. The question remains whether this capacity is <span style="color: #bc0031;"><strong>achievable</strong></span> by an actual code in the following sense:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Achievable rate</strong></h4>

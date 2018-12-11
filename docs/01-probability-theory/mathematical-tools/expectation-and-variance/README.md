@@ -1,3 +1,5 @@
+# Expectation and Variance
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Expectation</strong></h4>
 The expectation of a <i>real</i> random variable \(X\) is defined as \[ \mathbb{E}[X] := \sum_{x \in \mathcal{X}} P_X(x) \cdot x. \]</div>

@@ -1,3 +1,5 @@
+# Arithmetic Codes
+
 <p>Visualization using "language model" of controller presses (X,Y,A,B)</p>
 <p> </p>
 <p>In this section, we study a different kind of code that can handle context-dependent distributions, unlike the Huffman code. Binary representations of numbers in the interval \([0,1)\) as studied in the previous exercise give rise to a very elegant code:</p>

@@ -1,3 +1,5 @@
+# Definition: Independence Number
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Undirected Graph</strong></h4>
 A undirected simple graph \(G\) consists of a set \(V(G)\) of <span style="color: #bc0031;"><strong>vertices</strong></span> and a set \(E(G)\) of <span style="color: #bc0031;"><strong>edges</strong></span>. The edges are unordered pairs of vertices: each edge connects two different vertices of the graph.</div>

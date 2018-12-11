@@ -1,3 +1,5 @@
+# Discrete-Time Stochastic Process
+
 <p>Let us now consider more general sets of random variables than the three-variable Markov chains we saw in the previous section. In the rest of this chapter, we will consider infinite sequences of random variables, that can have varying degrees of independence. We start off with the most general definition of such an infinite process.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Discrete-time stochastic process</strong></h4>

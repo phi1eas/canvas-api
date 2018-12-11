@@ -1,3 +1,5 @@
+# Definition: Strong Graph Product
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Strong graph product</strong></h4>
 Let \(G, H\) be two graphs. We define the strong graph product \(G \boxtimes H\) as follows. The set of vertices is \[ V(G \boxtimes H) := V(G) \times V(H). \] The set of edges is \[ \begin{split} E(G \boxtimes H) := \big\{\{(x,y),(x',y')\} \mid (x,y) \neq (x',y') &amp;\text{ and } \left(x = x' \text{ or } \{x,x'\} \in E(G) \right) &amp;\text{ and } \left(y=y' \text{ or } \{y,y'\} \in E(H) \right) \big\}, \end{split} \] i.e., there is an edge between \((x,y)\) and \((x',y')\) if and only if the vertices of \(G\) are confusable (or equal) <i>and</i> the vertices of \(H\) are confusable (or equal).</div>

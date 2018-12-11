@@ -1,3 +1,5 @@
+# Source-Channel Separation Theorem: Forward Direction
+
 <p>So far in this course, we have treated the 'encoding' of information from two different perspectives:</p>
 <ul>
 <li>Codes for compressing information (in order to achieve <strong>efficient</strong> communication). <a title="Theorem: Shannon's Source-Coding Theorem (Optimal Codes)" href="https://canvas.uva.nl/courses/2205/pages/theorem-shannons-source-coding-theorem-optimal-codes" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/theorem-shannons-source-coding-theorem-optimal-codes" data-api-returntype="Page">Shannon's source-coding theorem</a> tells us that the minimal codeword length \(\ell_{min}(P_{V^n})\) for encoding a input block from the source \(V^n\) (where all \(V_i\) are i.i.d. according to some distribution \(P_V\)) is lower bounded by \(H(V^n) = nH(V)\). In other words, the rate for such a code, which is \(R = \frac{\log|\mathcal{V}^n|}{n}\), is lower bounded by \(H(V)\).</li>

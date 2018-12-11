@@ -1,3 +1,5 @@
+# The Chain Rule
+
 <p>The chain rule expresses the relation between the conditional entropy and the joint/maringal entropies of the variables involved. We first state and prove the chain rule for two random variables, and then generalize it to \(n\) variables.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition: Chain Rule</strong></h4>

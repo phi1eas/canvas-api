@@ -1,3 +1,5 @@
+# Noisy-Channel Theorem: Forward Direction
+
 <p>With the tools from the previous section, we are ready to prove the forward direction of Shannon's noisy-channel coding theorem, which states that any rate strictly below the channel capacity is achievable:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Shannon's noisy-channel coding theorem (forward direction)</strong></h4>

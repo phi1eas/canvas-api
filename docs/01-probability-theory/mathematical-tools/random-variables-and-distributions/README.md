@@ -1,3 +1,5 @@
+# Random Variables and Distributions
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Discrete Random Variable (RV)</strong></h4>
 Let \((\Omega, \mathcal{F}, P)\) be a discrete probability space. A random variable \(X\) is a function \(X : \Omega \to \mathcal{X}\) where \(\mathcal{X}\) is a set, and we may assume it to be discrete.</div>

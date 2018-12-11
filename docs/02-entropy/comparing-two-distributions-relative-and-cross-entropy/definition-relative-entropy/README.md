@@ -1,3 +1,5 @@
+# Definition: Relative Entropy
+
 <p>We can compare two distributions on the same set \(\mathcal{X}\) by considering their relative entropy: this measure reflects how different two distributions are.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Relative entropy</strong></h4>

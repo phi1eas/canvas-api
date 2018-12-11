@@ -1,3 +1,5 @@
+# Minimum Key Length for Perfectly Secure Encryption
+
 <p>It turns out to be impossible to design an encryption scheme that provides both perfect security and short keys. So even though the one-time pad may seem inefficient, its key length is optimal for a perfectly secure scheme.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem (Shannon, 1949)</strong></h4>

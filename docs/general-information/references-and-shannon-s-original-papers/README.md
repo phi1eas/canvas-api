@@ -1,3 +1,5 @@
+# References and Shannon's original papers
+
 <p> </p>
 <h3>Shannon's originals</h3>
 <p>Most of the contents of this course are based on (a modern understanding of) the contents of the two following papers by Claude Shannon:</p>

@@ -1,3 +1,5 @@
+# Markov Process: Stationary Distribution
+
 <p><img src="https://canvas.uva.nl/courses/2205/files/413835/preview?verifier=d8BwJdQOyZ4E7qED9VJvB2wvo3vjyweCdjfteTkB" alt="RandomProcess.png" width="600" height="488" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/413835" data-api-returntype="File"></p>
 <p>Suppose that we run the process of <a href="https://canvas.uva.nl/courses/2205/pages/markov-process-time-invariance-finite-state-transition-matrix#example2" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/markov-process-time-invariance-finite-state-transition-matrix%23example2" data-api-returntype="Page">Example 2</a> for a very large number of steps, and wonder what the probability will be of observing an \(\texttt{a}\) at the next step. Given the initial distribution and the state diagram, we can compute the probability distribution for every \(X_i\). In the figure above, \(P_{X_i}(\texttt{a})\) is plotted for several values of \(i\). The probability to observe an \(\texttt{a}\) seems to stabilize. This leads us to the following definition:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">

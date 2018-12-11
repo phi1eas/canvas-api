@@ -1,3 +1,5 @@
+# The Asymptotic Equipartition Property (AEP)
+
 <p>The weak law of large numbers has an entropy variant, which follows almost directly:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Asymptotic Equipartition Property (AEP)</strong></h4>

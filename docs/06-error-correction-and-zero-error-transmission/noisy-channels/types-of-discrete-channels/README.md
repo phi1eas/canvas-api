@@ -1,3 +1,5 @@
+# Types of Discrete Channels
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Deterministic channel</strong></h4>
 A channel is deterministic if \(H(Y|X) = 0\). In other words, \[ \forall x \in \mathcal{X}\ \exists y \in \mathcal{Y}: P_{Y|X}(y|x) = 1. \]</div>

@@ -1,3 +1,5 @@
+# Data-Processing Inequality
+
 <p>The whispering game in the example on the previous page exhibits an important property of Markov chains: you can only lose information down the line. Charlie's final message \(C\) does not contain any more information about Alice's original message \(A\) than what was already contained in Bob's message \(B\). This observation is formalized in the following theorem:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Data-processing inequality</strong></h4>

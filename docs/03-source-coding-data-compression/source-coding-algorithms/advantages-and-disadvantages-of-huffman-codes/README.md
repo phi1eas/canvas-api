@@ -1,3 +1,5 @@
+# Advantages and Disadvantages of Huffman Codes
+
 <p>It turns out that Huffman codes indeed have optimal code length.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Optimality of Huffman codes</strong></h4>

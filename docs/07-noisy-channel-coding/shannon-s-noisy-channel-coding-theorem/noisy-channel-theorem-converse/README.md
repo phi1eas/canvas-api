@@ -1,3 +1,5 @@
+# Noisy-Channel Theorem: Converse
+
 <p>In the previous section, we showed that any rate strictly below the channel capacity is achievable. Here, we show that one cannot do better: rates strictly above the channel capacity are not achievable. Specifically, codes with such rates suffer from non-negligible error probabilities.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Shannon's noisy-channel coding theorem (converse)</strong></h4>

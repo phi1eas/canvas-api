@@ -1,3 +1,5 @@
+# Definitions: Code, Rate, and Error Probability
+
 <p>In order to get as much information through a channel as possible, we can encode messages before sending them through the channel.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Code</strong></h4>

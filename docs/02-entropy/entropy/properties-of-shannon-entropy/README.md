@@ -1,3 +1,5 @@
+# Properties of Shannon Entropy
+
 <p>In this section, we list a few properties of the Shannon entropy, and show a trick to compute it more easily by hand.</p>
 <div id="defPositivity" class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition: Positivity of entropy</strong></h4>

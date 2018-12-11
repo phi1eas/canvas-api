@@ -1,3 +1,5 @@
+# The Chain Rule for Mutual Information
+
 <p>Similarly to the <a title="The Chain Rule" href="https://canvas.uva.nl/courses/2205/pages/the-chain-rule" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/the-chain-rule" data-api-returntype="Page">chain rule for entropy</a>, we can prove a chain rule for mutual information:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Corollary: Chain rule for mutual information</strong></h4>

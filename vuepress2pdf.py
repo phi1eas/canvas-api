@@ -95,7 +95,7 @@ async def create_pdf(url=None):
                 await page.waitForSelector(hide)
                 await page.evaluate("""() => {{ document.querySelector('{}').style.display = 'none'; }}""".format(hide))
 
-            path = "{}/{}-{}".format(output_path, i, j)
+            path = "{}/{}-{}.pdf".format(output_path, i, j)
             HEADER = config['layout']['header'].format(module['title'], child[1])
             await page.pdf({
                 'path': path,

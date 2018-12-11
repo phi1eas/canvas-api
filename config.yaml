@@ -9,3 +9,5 @@ layout:
 hide_elements:
   - '.navbar'
   - '.sidebar'
+  - '.page-nav'
+  - 'iframe'

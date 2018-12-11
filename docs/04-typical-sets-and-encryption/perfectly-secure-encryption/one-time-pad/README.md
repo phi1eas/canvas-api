@@ -1,3 +1,5 @@
+# One-Time Pad
+
 <p>A classic example of a perfectly secure encryption scheme is the one-time pad.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: One-time pad (OTP)</strong></h4>

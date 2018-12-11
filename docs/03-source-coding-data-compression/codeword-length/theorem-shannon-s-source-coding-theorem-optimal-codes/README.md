@@ -1,3 +1,5 @@
+# Theorem: Shannon's Source-Coding Theorem (Optimal Codes)
+
 <p>We now know that prefix-free codes can achieve the same minimal code lengths for a source \(P_X\) as the more general class of uniquely decodable codes. How small is this minimal code length in general? In this section we explore the following relation between the minimal code length and the entropy of the source:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Shannon's source-coding theorem (for symbol codes)</strong></h4>

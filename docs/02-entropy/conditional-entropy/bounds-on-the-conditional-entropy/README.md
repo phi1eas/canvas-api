@@ -1,3 +1,5 @@
+# Bounds on the Conditional Entropy
+
 <p>On this page, we show that the conditional entropy \(H(X|Y)\) is lower bounded by zero, and upper bounded by the entropy \(H(X)\). That is, <em>on average</em> any additional information (i.e., knowing \(Y\)) can only <i>decrease</i> the uncertainty about \(X\).</p>
 <div id="condEntropyBounds" class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition</strong></h4>

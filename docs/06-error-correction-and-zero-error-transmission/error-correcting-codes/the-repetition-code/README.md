@@ -1,3 +1,5 @@
+# The Repetition Code
+
 <p>A simple and intuitive code is the \(n\)-bit <span style="color: #bc0031;"><strong>repetition code</strong></span> \(R_n\): a single message bit is encoded by simply repeating the bit \(n\) times. Decoding is done by majority vote, that is, \(\mathtt{dec}(y) = MAJ(y_1, \ldots, y_n)\), which is 1 if and only if (strictly) more than half of the bits in \(y\) are 1s. In order to avoid ties in the decoding, repetition codes usually require that \(n\) is odd.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: 3-bit repetition code</strong></h4>

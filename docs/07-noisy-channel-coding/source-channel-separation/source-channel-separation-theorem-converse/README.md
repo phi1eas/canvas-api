@@ -1,3 +1,5 @@
+# Source-Channel Separation Theorem: Converse
+
 <p>Conversely, if a source \(V\) has entropy \(H(V)\) that exceeds the channel capacity \(C\), then it is impossible to transmit the source over the channel with arbitrarily small error.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Theorem: Source-channel separation theorem (converse)</strong></h4>

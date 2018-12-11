@@ -1,3 +1,5 @@
+# Source-Channel Coding
+
 <p>In this final part of the course, we want to study the "ultimate problem" of transmitting a source of information over a noisy channel.</p>
 <p><img src="https://canvas.uva.nl/courses/2205/files/670168/preview?verifier=uWDCWIXjbXh9z0djk0l3NA1f8qM1pH3SJjN92pVJ" alt="source channel separation.png" width="711" height="288" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/670168" data-api-returntype="File"></p>
 <p><span style="font-size: 8pt;">(Image credit: <span class="s1"><a href="http://www.ece.uic.edu/ECE534">ECE 534</a></span><span class="s2"> by Natasha Devroye, thanks a lot!)</span></span></p>

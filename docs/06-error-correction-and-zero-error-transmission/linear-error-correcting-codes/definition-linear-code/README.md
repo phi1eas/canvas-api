@@ -1,3 +1,5 @@
+# Definition: Linear Code
+
 <p>In this section, we study a class of error-correcting codes called linear codes. This type of code has a nice structure and can be encoded/decoded efficiently.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Linear code</strong></h4>

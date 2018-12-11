@@ -1,3 +1,5 @@
+# Entropy Diagrams for Two Random Variables
+
 <p>The relations between entropy, joint entropy, conditional entropy, mutual information, and conditional mutual information can be summed up visually. Here, we show how to do this when only two random variables are involved: all information-theoretic measures can be nicely represented by means of a Venn-diagram-like <span style="color: #bc0031;"><strong>entropy diagram</strong></span>. From the diagram, one can for instance easily read off the relations \(H(X|Y) \leq H(X)\), \(I(X;Y) = H(X) + H(Y) - H(XY)\), etc. The case of three random variables will be treated later in this course.</p>
 <p><em>Use the tool below to play around with different distributions of \(X\) and \(Y\), so you can see how the distribution affects the different entropic quantities. You can select one of the pre-defined distributions on the top, or use the arrows to move some of the probability weight around. Hover over the formulas on the bottom left to see which parts of the distribution were involved, and which part of the diagram corresponds to that quantity.</em></p>
 <p> </p>

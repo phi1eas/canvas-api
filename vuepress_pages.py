@@ -108,9 +108,7 @@ def save_item_as_doc(item, save_dir):
             body = content['body']
             body = body.replace('Show proof', 'Proof')
             body = body.replace('display: none;', '')
-            # body = body.replace('https://canvas.uva.nl/courses/{}/files/'.format(COURSE), '/assets/img/')
-            # body = re.sub(r'\?verifier=\w+"', '"', body)
-            # body = body.replace('/preview', '')
+            f.write('# ' + content['title'] + '\n\n')
             f.write(body)
 
         # @todo, if body contains image, download image and save locally

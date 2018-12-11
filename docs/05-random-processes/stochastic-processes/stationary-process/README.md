@@ -1,3 +1,5 @@
+# Stationary Process
+
 <p>Often, we will be interested in stochastic processes with specific properties, such as processes where all \(X_i\) are independent, or processes with a Markov-like property. We review several such properties.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Stationary process</strong></h4>

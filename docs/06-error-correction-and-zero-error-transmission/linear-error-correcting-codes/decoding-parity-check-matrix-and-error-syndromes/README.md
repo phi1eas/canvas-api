@@ -1,3 +1,5 @@
+# Decoding: Parity-Check Matrix and Error Syndromes
+
 <p>The decoding operation can be described by defining the parity-check matrix:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Parity-check matrix</strong></h4>

@@ -1,3 +1,5 @@
+# Definition: Longer Markov Chains
+
 <p>We can extend the definition of Markov chains to more than three variables:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Markov chain (of length \(n\))</strong></h4>

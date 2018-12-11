@@ -1,3 +1,5 @@
+# Convergence of Random Variables
+
 <p>The following definition of converging random variables may remind you of a converging sequence of numbers. Recall that a sequence \(x_1, x_2, x_3, \ldots\) of numbers converges to \(x\) if \(\forall\epsilon &gt; 0 \ \exists n_0 \ \forall (n \geq n_0) : |x_n - x| &lt; \epsilon\). We denote this by writing \(x_n \xrightarrow{n \to \infty} x\).</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Converging random variables</strong></h4>

@@ -1,3 +1,5 @@
+# Logarithms
+
 <p>Throughout the course, we will be working heavily with the <a href="https://en.wikipedia.org/wiki/Logarithm">logarithm function</a>. Familiarize yourself with its definition, and make sure you are able to manipulate expressions and solve equations involving logarithms.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Convention</strong></h4>

@@ -1,3 +1,5 @@
+# Definition: Cross Entropy
+
 <p>Suppose you draw samples from a set \(\mathcal{X}\), according do a distribution \(P\), while <i>thinking</i> you are drawing those samples according to a distribution \(Q\). How surprised do you expect to be? This surprisal value is expressed by the <span style="color: #bc0031;"><strong>cross entropy</strong></span>, a quantity that is very closely related to the relative entropy.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Cross Entropy</strong></h4>

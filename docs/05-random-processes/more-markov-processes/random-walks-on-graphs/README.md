@@ -1,3 +1,5 @@
+# Random Walks on Graphs
+
 <p>An important and widely applicable example of a time-invariant Markov process is a random walk on a connected graph G with strictly positive symmetric edge weights \( W_{ij} = W_{ji} \). The random walk is defined as follows: at node \( i \), walk to node \( j \) with probability \( \frac{W_{ij}}{W_i} \) where \( W_i := \sum_j W_{ij} \) is the sum of the weights of all edges involving node \( i \), and \( W := \frac12 \sum_i W_i \) is the total of all edge weights.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example</strong></h4>

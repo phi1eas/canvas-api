@@ -1,3 +1,5 @@
+# Some Important Distributions
+
 <p>We end the theoretic preliminaries with a (non-exhaustive) list of common probability distributions that you will come across throughout the course.</p>
 <ul>
 <li>The distribution of a biased coin with probability \(P_X(1)=p\) to land heads, and a probability of \(P_X(0)=1-p\) to land tails is called <a href="https://en.wikipedia.org/wiki/Bernoulli_distribution"><span style="color: #bc0031;"><strong>Bernoulli(\(p\))</strong></span> distribution</a>. The expected value is \(\mathbb{E}[X]=p\) and the variance is \(\text{Var}[X]=p(1-p)\).</li>

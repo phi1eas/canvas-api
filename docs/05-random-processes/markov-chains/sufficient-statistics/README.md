@@ -1,3 +1,5 @@
+# Sufficient Statistics
+
 <p>Consider a family of probability distributions \(P_X^\theta\) which is parametrized by \(\theta\). Let \( T(X) \) be any statistic (i.e. a function of sample \( X \) ). It then holds that \begin{align} \theta \rightarrow X \rightarrow T(X). \end{align}</p>
 <p>Hence, by the data-processing inequality, it holds that \( I(\theta ; X) \geq I(\theta ; T(X) ) \), with equality if \( I(\theta ; X \mid T(X) ) = 0 \), or in other words, equality holds if \( \theta \leftrightarrow T(X) \leftrightarrow X \) is also a Markov chain. As we want to make sure that our statistic does not lose any information about the parameter \( \theta \), we define the following.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">

@@ -1,3 +1,5 @@
+# Definition: Unique decodability
+
 <p>In many situations, we may want to transmit or store more than a single symbol from the source. Instead, we want to transmit or store a list of symbols, or even a potentially infinite stream of symbols.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Extended symbol code</strong></h4>

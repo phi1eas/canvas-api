@@ -1,3 +1,5 @@
+# Definition: Sources and Codes
+
 <p>We start by investigating symbol codes: codes that encode a source \(P_X\), one symbol at a time. Later on, we will also see codes that group the source symbols together into blocks.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Symbol code</strong></h4>

@@ -1,3 +1,5 @@
+# What? Do I need to know how to program for this course?
+
 <p>This is a theoretical course on information theory. However, these days, even if you are studying theory, some basic programming can help you tremendously. In this course, you will be expected to write small programs for exactly that purpose: to better understand certain concepts; to develop or test hypotheses; and to observe the effects of large numbers (bigger data sets which you cannot process by hand) on information-theoretic quantities.</p>
 <h3><strong>Do I need to be a proficient programmer to follow this course?</strong></h3>
 <p>No. We intentionally keep the programming exercises small, a few lines of code at a time. You will never be expected to write complicated pieces of software, and the emphasis will lie on the mathematical concepts rather than algorithmic complexity.</p>

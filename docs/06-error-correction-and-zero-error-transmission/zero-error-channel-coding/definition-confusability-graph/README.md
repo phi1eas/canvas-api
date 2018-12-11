@@ -1,3 +1,5 @@
+# Definition: Confusability Graph
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Confusability graph</strong></h4>
 Let \((\mathcal{X},P_{Y|X},\mathcal{Y})\) be a channel. The confusability graph \(G\) for the channel consists of the set of input symbols of the channel: \[V(G) := \mathcal{X},\] and \[ E(G) := \{\{x,x'\} \subset \mathcal{X} \mid x \neq x' \text{ and } \exists y \in \mathcal{Y} \text{ s.t. } P_{Y|X}(y|x) \cdot P_{Y|X}(y|x') &gt; 0\} \] is the set of input pairs that are confusable (because they reach a shared output symbol \(y \in \mathcal{Y}\)).</div>

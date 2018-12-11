@@ -1,3 +1,5 @@
+# Definition: Binary Representation & Binary Intervals
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Standard binary representation</strong></h4>
 The standard binary representation of a real number \(r \in [0,1)\) is a (possibly infinite) string of bits \(c_1c_2\cdots\) such that \[ r = \sum_i c_i \cdot 2^{-i}, \] where by convention, 0 is represented by the string 0.</div>

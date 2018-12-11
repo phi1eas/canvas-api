@@ -1,3 +1,5 @@
+# Definition: Typical Set
+
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Biased coin flip</strong></h4>
 Consider flipping a biased coin, with probability of heads being \(P_{X}(\texttt{h}) = 0.1\) and probability of tails being \(P_{X}(\texttt{t}) = 0.9\), and counting the number of heads that come up. The random variable \(Y\) describing this number is distributed according to the binomial\((n,P_{X}(\texttt{h}))\) distribution, where \(n\) is the number of coin flips. Below, the distribution of \(Y\) is plotted for \(n = 100\) and \(n = 1000\):

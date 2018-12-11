@@ -1,3 +1,5 @@
+# Definition: (Minimal) Average Length
+
 <p>For efficiency reasons, we are often interested in the average (expected) length of a code \(C\):</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Average length</strong></h4>

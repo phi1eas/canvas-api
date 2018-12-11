@@ -1,3 +1,5 @@
+# AEP for Ergodic Stationary Processes
+
 <p>Under some natural assumptions, many statements and interpretations of the Shannon entropy we have seen in the context of the asymptotic equipartition property (AEP) can be generalized to the entropy rate \(H( \{ X_i \} ) \) of stochastic processes. </p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Ergodic Random Processes</strong></h4>

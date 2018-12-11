@@ -1,3 +1,5 @@
+# Fano's Inequality
+
 <p>Suppose you see \(Y\), the output of some noisy channel, and you want to guess what the input to the channel must have been. Let your guess \(\hat{X}\) be some function of your observation of \(Y\), that is, \(\hat{X} = g(Y)\). Note that \(X \to Y \to \hat{X}\) forms a Markov chain.</p>
 <p>Fano's inequality relates the probability that your guess is wrong \(P[\hat{X} \neq X])\) to \(H(X|Y)\): the uncertainty you have about the channel's input \(X\) when you are only given the output \(Y\).</p>
 <div class="content-box pad-box-mini border border-trbl border-round">

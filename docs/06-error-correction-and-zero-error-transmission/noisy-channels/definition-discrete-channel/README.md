@@ -1,3 +1,5 @@
+# Definition: Discrete Channel
+
 <p>We now make the notion of 'channel' more precise.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Discrete channel</strong></h4>

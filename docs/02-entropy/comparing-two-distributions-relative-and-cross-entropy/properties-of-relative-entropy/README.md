@@ -1,3 +1,5 @@
+# Properties of Relative Entropy
+
 <p>Even though relative entropy is always nonnegative (see the theorem below), it is not a proper distance measure, because it is not symmetric and does not satisfy the triangle inequality.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Lemma: Alternative Definition of Mutual Information<br></strong></h4>

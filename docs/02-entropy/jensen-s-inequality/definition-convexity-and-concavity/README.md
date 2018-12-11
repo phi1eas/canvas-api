@@ -1,3 +1,5 @@
+# Definition: Convexity and Concavity
+
 <p>In the following, let \(\mathcal{D}\) be an interval in \(\mathbb{R}\).</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Convex and concave functions</strong></h4>

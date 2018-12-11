@@ -1,3 +1,5 @@
+# Multiple Channel Uses
+
 <p>Earlier in this module we have found that the independence number of the confusability graph is a conclusive upper bound for the number of messages that can be sent over a channel <i>in a single use</i>. But it turns out that if the same channel is allowed to be used more than once, it is sometimes possible to achieve a higher rate, still error-free!</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example: Two uses of the noisy typewriter</strong></h4>

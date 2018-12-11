@@ -1,3 +1,5 @@
+# Properties of Typical Sets
+
 <p>In the coin-flipping example on the previous page, the typical set eventually contained almost all of the probability. The following proposition states that this is a general property of typical sets. The proposition also bounds the size of the typical set.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Proposition</strong></h4>

@@ -1,3 +1,5 @@
+# Definition: Binary Entropy
+
 <p>For a <a title="A binary random variable is a random variable that can take on two values." data-tooltip='{"tooltipClass":"popover popover-padded", "position":"right"}'>binary random variable</a> \(X\) with image \({\cal X} = \{x_0,x_1\}\) and probabilities \(P_X(x_0) = p\) and \(P_X(x_1) = 1-p\), we can write \(H(X) = h(p)\), where \(h\) denotes the binary entropy function:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Binary entropy function \(h\)</strong></h4>

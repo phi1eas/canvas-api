@@ -1,3 +1,5 @@
+# Entropy Rate
+
 <p>Intuitively, some of the stochastic processes we have seen in the previous sections are more predictable than others. The periodic Markov process from <a title="Markov Process: Irreducibility, Periodicity, Convergence" href="https://canvas.uva.nl/courses/2205/pages/markov-process-irreducibility-periodicity-convergence#example3" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/markov-process-irreducibility-periodicity-convergence%23example3" data-api-returntype="Page">Example 3</a> is not so surprising anymore as soon as the first \(\texttt{b}\) is observed. In this section, we will study a measure for the unpredictability of a stochastic process: the entropy rate.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Entropy rate</strong></h4>

@@ -1,3 +1,5 @@
+# Probability Spaces and Events
+
 <p>For this course, we will only be concerned with discrete probabilities. This section formalizes some notions you should already be familiar with: probability spaces, events and probability distributions.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Probability space</strong></h4>

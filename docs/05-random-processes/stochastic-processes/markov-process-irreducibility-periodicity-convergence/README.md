@@ -1,3 +1,5 @@
+# Markov Process: Irreducibility, Periodicity, Convergence
+
 <p>Every time-invariant Markov process has a stationary distribution, but it might not be unique, and the process might never reach the stationary distribution. For uniqueness and convergence, we need additional requirements on the Markov process.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Irreducible Markov process</strong></h4>
