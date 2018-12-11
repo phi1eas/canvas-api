@@ -5,7 +5,7 @@ layout:
     right: '2cm'
     bottom: '1cm'
   header: '<div id="template"><div class="all"><span class="title">{} - {}</span></div></div>'
-  footer: '<div id="template"><div class="left">created: {}</div><div class="right"><span class="pageNumber"></span></div></div>'
+  footer: '<div id="template"><div class="left">created: {}</div></div>'
 hide_elements:
   - '.navbar'
   - '.sidebar'
