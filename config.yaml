@@ -11,3 +11,4 @@ hide_elements:
   - '.sidebar'
   - '.page-nav'
   - 'iframe'
+  - 'video'

@@ -7,20 +7,20 @@ module.exports = {
 		displayAllHeaders: true
 	},
 	head: [
-		[ 'script',
+		[
+			'script',
 			{ 
-				type: "text/x-mathjax-config"
+				type: 'text/x-mathjax-config'
 			},
 			"MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],processEscapes: true}});"
 		],
-		[ "script",
-			{ 
-				src: "/assets/js/MathJax.js?config=TeX-AMS_HTML"
-			}
+		[ 'script',
+			{ src: '/assets/js/MathJax.js?config=TeX-AMS_HTML'}
 		],
-		[ "script",
+		[
+			'script',
 			{ 
-				type: "application/javascript"
+				type: 'application/javascript'
 			},
 			"function timeout() {setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();}, 1000)};MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();"
 		]
