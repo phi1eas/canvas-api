@@ -22,7 +22,7 @@ module.exports = {
 			{ 
 				type: 'application/javascript'
 			},
-			"setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);}, 1000);"
+			"function timeout() {setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();}, 1000)};MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();"
 		]
 	]
 }

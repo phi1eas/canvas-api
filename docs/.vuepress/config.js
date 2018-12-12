@@ -15,14 +15,14 @@ module.exports = {
 		],
 		[ "script",
 			{ 
-				type: "application/javascript"
-			},
-			"function timeout() {setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout()}, 1000)};timeout();"
-		],
-		[ "script",
-			{ 
 				src: "/assets/js/MathJax.js?config=TeX-AMS_HTML"
 			}
 		],
+		[ "script",
+			{ 
+				type: "application/javascript"
+			},
+			"function timeout() {setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();}, 1000)};MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);timeout();"
+		]
 	]
 }
