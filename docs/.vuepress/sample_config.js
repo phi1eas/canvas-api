@@ -15,7 +15,14 @@ module.exports = {
 			"MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],processEscapes: true}});"
 		],
 		[ 'script',
-			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML'}
+			{ src: '/assets/js/MathJax.js?config=TeX-AMS_HTML'}
+		],
+		[
+			'script',
+			{ 
+				type: 'application/javascript'
+			},
+			"setTimeout(function() {MathJax.Hub.Queue([\"Typeset\", MathJax.Hub]);}, 1000);"
 		]
 	]
 }

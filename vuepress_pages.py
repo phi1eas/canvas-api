@@ -110,8 +110,6 @@ def save_item_as_doc(item, save_dir):
             body = body.replace('display: none;', '')
             f.write('# ' + content['title'] + '\n\n')
             f.write(body)
-
-        # @todo, if body contains image, download image and save locally
     return path, content['title']
 
 def process_sidebar(sidebar):
@@ -150,9 +148,6 @@ def main():
         if not dirpath in ['.vuepress', 'README.md']:
             # Ignore files
             shutil.rmtree(VUEPRESS_DIR + '/' + dirpath)
-    
-    shutil.rmtree(VUEPRESS_DIR + '/.vuepress/public', True)
-    shutil.rmtree(VUEPRESS_DIR + '/.vuepress/dist', True)
 
     # Create dir to save html files
     pathlib.Path(VUEPRESS_DIR).mkdir(exist_ok=True)
@@ -191,11 +186,11 @@ def main():
                 # Save pages as html. First item contains header, start at 2nd item.
                 for subitem in item[1:]:
                     path, title = save_item_as_doc(subitem, group_dir)
-            
+                    sidebar.append((path, title))
             else:
                 # item is not a list, so an item without header. Save in module_dir.
                 path, title = save_item_as_doc(item, module_dir)
-            sidebar.append((path, title))
+                sidebar.append((path, title))
     sidebar = process_sidebar(sidebar)
     with open('docs/.vuepress/sample_config.js', 'r') as f:
         template = f.read()
