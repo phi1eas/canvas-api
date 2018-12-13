@@ -3,7 +3,8 @@ This repository contains all elements needed to generate a static site from a co
 
 # Information Theory 2018-2019
 If you just want to use this repository for Information Theory, follow the following steps.
-1. Clone this repository, e.g. git clone https://github.com/r-hoffmann/canvas-api.git
+1. Clone this repository, e.g. 
+`git clone https://github.com/r-hoffmann/canvas-api.git`
 2. Go to the root directory of the static website and serve it, e.g. 
 `cd canvas-api/docs/.vuepress/dist`
 `python3 -m http.server 80`
