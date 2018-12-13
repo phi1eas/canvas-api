@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="image-wlln.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.63406pt" height="97.32211pt" viewBox="-32.74944 -34.04497 124.63406 97.32211 "> 
+<g transform="translate(0, 63.27715 ) scale(1,-1) translate(0,34.04497 )"> 
+          <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g>
+ <g>
+ <g>
+ <g stroke-width="0.2pt">
+ <g stroke="rgb(50.0%,50.0%,50.0%)">
+ <g fill="rgb(50.0%,50.0%,50.0%)">
+ <path d=" M  0.0 -5.73459 L  0.0 -1.46692 M  40.52582 -5.73459 L  40.52582 -1.46692 M  81.05164 -5.73459 L  81.05164 -1.46692 M  0.0 63.07715 L  0.0 58.80946 M  40.52582 63.07715 L  40.52582 58.80946 M  81.05164 63.07715 L  81.05164 58.80946  " style="fill:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g stroke-width="0.2pt">
+ <g stroke="rgb(50.0%,50.0%,50.0%)">
+ <g fill="rgb(50.0%,50.0%,50.0%)">
+ <path d=" M  -8.10565 0.0 L  -3.83803 0.0 M  -8.10565 21.74301 L  -3.83803 21.74301 M  -8.10565 43.48602 L  -3.83803 43.48602 M  89.15729 0.0 L  84.88966 0.0 M  89.15729 21.74301 L  84.88966 21.74301 M  89.15729 43.48602 L  84.88966 43.48602  " style="fill:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  -8.10565 -5.73459 L  -8.10565 63.07715 L  89.15729 63.07715 L  89.15729 -5.73459 L  -8.10565 -5.73459 Z  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-2.5,-15.71199)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,35.5258,-15.71199)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(5.00002,0)" text-anchor="middle"  font-size="10"> 
+50</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,73.55162,-15.71199)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.50002,0)" text-anchor="middle"  font-size="10"> 
+100</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-16.63863,-3.22221)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-29.41646,18.5208)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.88892,0)" text-anchor="middle"  font-size="10"> 
+0<tspan font-family="cmmi" font-size="10">.</tspan>05</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-24.41643,40.26381)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(6.3889,0)" text-anchor="middle"  font-size="10"> 
+0<tspan font-family="cmmi" font-size="10">.</tspan>1</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <clipPath id="pgfcp1"> <path d=" M  -8.10565 -5.73459 L  89.15729 -5.73459 L  89.15729 63.07715 L  -8.10565 63.07715 Z  "/>
+</clipPath>
+ <g clip-path="url(#pgfcp1)">
+ <g>
+ <g fill="rgb(95.29419%,39.99939%,9.80377%)">
+ <path d=" M  0.0 0.01155 L  0.81052 0.12833 L  1.62103 0.70586 L  2.43155 2.56201 L  3.24207 6.90317 L  4.05258 14.7268 L  4.8631 25.90834 L  5.67361 38.65683 L  6.48413 49.9322 L  7.29465 56.71243 L  8.10516 57.34254 L  8.91568 52.12965 L  9.7262 42.95886 L  10.53671 32.31087 L  11.34723 22.30995 L  12.15775 14.2123 L  12.96826 8.38919 L  13.77878 4.60582 L  14.5893 2.35976 L  15.39981 1.13158 L  16.21033 0.50922 L  24.31549 0.0 L  81.05164 0.0  " />
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,23.35802,-30.71199)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(17.1678,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">n </tspan>=100</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                     </g> 
+</svg> 

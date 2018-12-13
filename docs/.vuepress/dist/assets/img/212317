@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="encryption.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="199.5692pt" height="200.34206pt" viewBox="-0.2 -85.55823 199.5692 200.34206 "> 
+<g transform="translate(0, 114.78383 ) scale(1,-1) translate(0,85.55823 )"> 
+<g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g>
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  0.0 0.0 M  0.0 0.0 L  0.0 56.90549 L  56.90549 56.90549 L  56.90549 0.0 Z M  56.90549 56.90549  " />
+ </g>
+ </g>
+ <path d=" M  64.01866 28.45274 L  131.55058 28.45274  " style="fill:none"/>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,131.55058,28.45274)">
+ <g>
+ <path d=" M  3.59995 0.0 C  2.53328 0.2 0.79999 0.79999 -0.4 1.49997 L  -0.4 -1.49997 C  0.79999 -0.79999 2.53328 -0.2 3.59995 0.0  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <g>
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  142.26372 0.0 M  142.26372 0.0 L  142.26372 56.90549 L  199.1692 56.90549 L  199.1692 0.0 Z M  199.1692 56.90549  " />
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,17.48051,24.98053)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(10.97223,0)" text-anchor="middle"  font-size="10"> 
+Alice</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,161.89699,32.0937)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.81947,0)" text-anchor="middle"  font-size="10"> 
+Bob</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,149.03934,18.83955)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(21.67712,0)" text-anchor="middle"  font-size="10"> 
+(knows <tspan font-family="cmmi" font-size="10">k</tspan>)</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,70.0657,34.48572)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(22.4057,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">Enc</tspan>(<tspan font-family="cmmi" font-size="10">m, k</tspan>)</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  28.45274 99.5846 L  28.45274 67.6186  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,28.45274,67.6186)">
+ <g>
+ <path d=" M  3.59995 0.0 C  2.53328 0.2 0.79999 0.79999 -0.4 1.49997 L  -0.4 -1.49997 C  0.79999 -0.79999 2.53328 -0.2 3.59995 0.0  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <g>
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  22.76227 78.24504 M  22.76227 78.24504 L  22.76227 85.35823 L  34.1432 85.35823 L  34.1432 78.24504 Z M  34.1432 85.35823  " style="stroke:none"/>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,24.06268,79.64886)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(4.39006,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">m</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,20.11003,104.61754)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.34271,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">P</tspan><tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="7">M</tspan> </tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,91.8252,104.61754)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.7594,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">P</tspan><tspan baseline-shift="sub"><tspan font-family="cmmi" font-size="7">K</tspan> </tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  99.5846 99.5846 L  38.72026 65.77112  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.87622,-0.4868,0.4868,-0.87622,38.72026,65.77112)">
+ <g>
+ <path d=" M  3.59995 0.0 C  2.53328 0.2 0.79999 0.79999 -0.4 1.49997 L  -0.4 -1.49997 C  0.79999 -0.79999 2.53328 -0.2 3.59995 0.0  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <path d=" M  99.5846 99.5846 L  160.44893 65.77112  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.87622,-0.4868,0.4868,0.87622,160.44893,65.77112)">
+ <g>
+ <path d=" M  3.59995 0.0 C  2.53328 0.2 0.79999 0.79999 -0.4 1.49997 L  -0.4 -1.49997 C  0.79999 -0.79999 2.53328 -0.2 3.59995 0.0  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ <g>
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  64.01866 78.24504 M  64.01866 78.24504 L  64.01866 85.35823 L  71.13185 85.35823 L  71.13185 78.24504 Z M  71.13185 85.35823  " style="stroke:none"/>
+ </g>
+ </g>
+ <g>
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  128.03734 78.24504 M  128.03734 78.24504 L  128.03734 85.35823 L  135.15053 85.35823 L  135.15053 78.24504 Z M  135.15053 85.35823  " style="stroke:none"/>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,64.81483,78.32942)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.76042,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">k</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,128.83351,78.32942)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.76042,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">k</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  71.13185 -85.35823 M  71.13185 -85.35823 L  71.13185 -28.45274 L  128.03734 -28.45274 L  128.03734 -85.35823 Z M  128.03734 -28.45274  " />
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,91.45958,-46.09576)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.12502,0)" text-anchor="middle"  font-size="10"> 
+Eve</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,79.1401,-59.40549)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(20.44449,0)" text-anchor="middle"  font-size="10"> 
+(does not</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,81.82414,-73.63185)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(17.76045,0)" text-anchor="middle"  font-size="10"> 
+know  <tspan font-family="cmmi" font-size="10">k</tspan>)</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  99.5846 28.45274 L  99.5846 -17.73961  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.0,-1.0,1.0,0.0,99.5846,-17.73961)">
+ <g>
+ <path d=" M  3.59995 0.0 C  2.53328 0.2 0.79999 0.79999 -0.4 1.49997 L  -0.4 -1.49997 C  0.79999 -0.79999 2.53328 -0.2 3.59995 0.0  " style="stroke:none"/>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                                            </g> 
+</svg> 

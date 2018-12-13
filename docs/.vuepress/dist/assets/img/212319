@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="OTP2.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132.28117pt" height="160.35237pt" viewBox="-42.87912 -106.49484 132.28117 160.35237 "> 
+<g transform="translate(0, 53.85753 ) scale(1,-1) translate(0,106.49484 )"> 
+             <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g>
+ <g stroke="rgb(94.9997%,94.9997%,94.9997%)">
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  0.0 0.0 M  42.67912 0.0 C  42.67912 23.57132 23.57132 42.67912 0.0 42.67912 C  -23.57132 42.67912 -42.67912 23.57132 -42.67912 0.0 C  -42.67912 -23.57132 -23.57132 -42.67912 0.0 -42.67912 C  23.57132 -42.67912 42.67912 -23.57132 42.67912 0.0 Z M  0.0 0.0  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke="rgb(94.9997%,94.9997%,94.9997%)">
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  42.67911 0.0 M  85.35823 0.0 C  85.35823 23.57132 66.25043 42.67912 42.67911 42.67912 C  19.10779 42.67912 -0.00002 23.57132 -0.00002 0.0 C  -0.00002 -23.57132 19.10779 -42.67912 42.67911 -42.67912 C  66.25043 -42.67912 85.35823 -23.57132 85.35823 0.0 Z M  42.67911 0.0  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke="rgb(94.9997%,94.9997%,94.9997%)">
+ <g fill="rgb(94.9997%,94.9997%,94.9997%)">
+ <path d=" M  21.33955 -42.67911 M  64.01868 -42.67911 C  64.01868 -19.10779 44.91087 0.00002 21.33955 0.00002 C  -2.23177 0.00002 -21.33957 -19.10779 -21.33957 -42.67911 C  -21.33957 -66.25043 -2.23177 -85.35823 21.33955 -85.35823 C  44.91087 -85.35823 64.01868 -66.25043 64.01868 -42.67911 Z M  21.33955 -42.67911  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ <g>
+ <clipPath id="pgfcp1"> <path d=" M  42.67911 0.0 M  85.35823 0.0 C  85.35823 23.57132 66.25043 42.67912 42.67911 42.67912 C  19.10779 42.67912 -0.00002 23.57132 -0.00002 0.0 C  -0.00002 -23.57132 19.10779 -42.67912 42.67911 -42.67912 C  66.25043 -42.67912 85.35823 -23.57132 85.35823 0.0 Z M  42.67911 0.0  "/>
+</clipPath>
+ <g clip-path="url(#pgfcp1)">
+ <g>
+ <g stroke="rgb(100.0%,100.0%,100.0%)">
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  21.33955 -42.67911 M  64.01868 -42.67911 C  64.01868 -19.10779 44.91087 0.00002 21.33955 0.00002 C  -2.23177 0.00002 -21.33957 -19.10779 -21.33957 -42.67911 C  -21.33957 -66.25043 -2.23177 -85.35823 21.33955 -85.35823 C  44.91087 -85.35823 64.01868 -66.25043 64.01868 -42.67911 Z M  21.33955 -42.67911  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <clipPath id="pgfcp2"> <path d=" M  0.0 0.0 M  42.67912 0.0 C  42.67912 23.57132 23.57132 42.67912 0.0 42.67912 C  -23.57132 42.67912 -42.67912 23.57132 -42.67912 0.0 C  -42.67912 -23.57132 -23.57132 -42.67912 0.0 -42.67912 C  23.57132 -42.67912 42.67912 -23.57132 42.67912 0.0 Z M  0.0 0.0  "/>
+</clipPath>
+ <g clip-path="url(#pgfcp2)">
+ <g>
+ <g stroke="rgb(100.0%,100.0%,100.0%)">
+ <g fill="rgb(100.0%,100.0%,100.0%)">
+ <path d=" M  21.33955 -42.67911 M  64.01868 -42.67911 C  64.01868 -19.10779 44.91087 0.00002 21.33955 0.00002 C  -2.23177 0.00002 -21.33957 -19.10779 -21.33957 -42.67911 C  -21.33957 -66.25043 -2.23177 -85.35823 21.33955 -85.35823 C  44.91087 -85.35823 64.01868 -66.25043 64.01868 -42.67911 Z M  21.33955 -42.67911  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <clipPath id="pgfcp3"> <path d=" M  0.0 0.0 M  42.67912 0.0 C  42.67912 23.57132 23.57132 42.67912 0.0 42.67912 C  -23.57132 42.67912 -42.67912 23.57132 -42.67912 0.0 C  -42.67912 -23.57132 -23.57132 -42.67912 0.0 -42.67912 C  23.57132 -42.67912 42.67912 -23.57132 42.67912 0.0 Z M  0.0 0.0  "/>
+</clipPath>
+ <g clip-path="url(#pgfcp3)">
+ <g>
+ <g stroke="rgb(97.6471%,69.9997%,54.90265%)">
+ <g fill="rgb(97.6471%,69.9997%,54.90265%)">
+ <path d=" M  42.67911 0.0 M  85.35823 0.0 C  85.35823 23.57132 66.25043 42.67912 42.67911 42.67912 C  19.10779 42.67912 -0.00002 23.57132 -0.00002 0.0 C  -0.00002 -23.57132 19.10779 -42.67912 42.67911 -42.67912 C  66.25043 -42.67912 85.35823 -23.57132 85.35823 0.0 Z M  42.67911 0.0  " style="stroke:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  0.0 0.0 M  42.67912 0.0 C  42.67912 23.57132 23.57132 42.67912 0.0 42.67912 C  -23.57132 42.67912 -42.67912 23.57132 -42.67912 0.0 C  -42.67912 -23.57132 -23.57132 -42.67912 0.0 -42.67912 C  23.57132 -42.67912 42.67912 -23.57132 42.67912 0.0 Z M  0.0 0.0  " style="fill:none"/>
+ <g>
+ <g stroke-width="2.84526pt">
+ <path d=" M  42.67911 0.0 M  85.35823 0.0 C  85.35823 23.57132 66.25043 42.67912 42.67911 42.67912 C  19.10779 42.67912 -0.00002 23.57132 -0.00002 0.0 C  -0.00002 -23.57132 19.10779 -42.67912 42.67911 -42.67912 C  66.25043 -42.67912 85.35823 -23.57132 85.35823 0.0 Z M  42.67911 0.0  " style="fill:none"/>
+ </g>
+ </g>
+ <path d=" M  21.33955 -42.67911 M  64.01868 -42.67911 C  64.01868 -19.10779 44.91087 0.00002 21.33955 0.00002 C  -2.23177 0.00002 -21.33957 -19.10779 -21.33957 -42.67911 C  -21.33957 -66.25043 -2.23177 -85.35823 21.33955 -85.35823 C  44.91087 -85.35823 64.01868 -66.25043 64.01868 -42.67911 Z M  21.33955 -42.67911  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-23.83955,2.11267)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,61.51866,2.11267)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,18.69661,12.0736)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.64294,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">a</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,18.83955,-62.9727)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-35.18677,43.02455)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(13.84721,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">H</tspan>(<tspan font-family="cmmi" font-size="10">M</tspan>)</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,41.96825,43.02455)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(22.05042,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">H</tspan>(<tspan font-family="cmmi" font-size="10">C</tspan>) <tspan font-family="cmsy" font-size="10">&#x2264; </tspan><tspan font-family="cmmi" font-size="10">n</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-6.9111,-29.89392)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.64294,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">a</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,43.9461,-29.89392)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(3.00117,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">n</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,12.58554,-19.57138)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.75401,0)" text-anchor="middle"  font-size="10"> 
+ <tspan font-family="cmsy" font-size="10">- </tspan><tspan font-family="cmmi" font-size="10">a</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-1.38377,-100.66187)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(22.72333,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">H</tspan>(<tspan font-family="cmmi" font-size="10">K</tspan>) = <tspan font-family="cmmi" font-size="10">n</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                  </g> 
+</svg> 
