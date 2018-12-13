@@ -1,10 +1,14 @@
-# canvas-api
-playing around with the Canvas API
+# Canvas modules to static Vuepress website
+This repository contains all elements needed to generate a static site from a course of Canvas. For now it contains the course Information Theory 2018-2019 taught at the UvA, which can be served immediately.
+
+# Information Theory 2018-2019
+If you just want to use this repository for Information Theory, follow the following steps.
+1. Clone this repository, e.g. git clone https://github.com/r-hoffmann/canvas-api.git
+2. Go to the root directory of the static website and serve it, e.g. 
+`cd canvas-api/docs/.vuepress/dist`
+`python3 -m http.server 80`
+If the port 80 is already used, change it appropriately. 
+3. Now you can go to your browser and browse to `locahost:80` (or another port if you have chosen to in the last step)
 
 # Installation
-1. create a virtualenv: `mkvirtualenv canvas -p python3`
-2. install required packages: `pip install -r requirements.txt`
-3. create a local settings file: `cp sample_local_settings.py local_settings.py`
-4. goto https://canvas.uva.nl/profile/settings and create a new access token
-5. copy sample_local_settings.py to local_settings.py
-5. copy-paste the token value into local_settings.py
+Work in progress
