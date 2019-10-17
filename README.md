@@ -21,6 +21,7 @@ It is possible to generate a pdf for another course with this repository. First 
 4. Retrieve the contents from the Canvas servers and store them in the `docs` directory. Just run `python vuepress_pages.py`
 
 Now we have a local copy of the Canvas pages in the `docs` directory, each chapter and section should have its own subdirectory. The markdown files are supported by https://github.com/vuejs/vuepress and we can serve this directory like the previous section. The next steps will convert the vuepress pages to a pdf, note that this part uses yarn, but npm can also be used.
+
 5. Install the npm packages, e.g. run `yarn` in the root directory
 6. Start the local server, e.g. `yarn run docs:dev`. This will output an IP: `VuePress dev server listening at http://localhost:8080/`.
 7. Scrape the local server, convert these to pdf files and merge these. This can easily be done with a Python script, be sure to give the IP as a parameter, e.g. `python vuepress2pdf.py http://localhost:8080`. Note that this script requires a few Python packages which should be installed with `pip install --user <package-name>`.
