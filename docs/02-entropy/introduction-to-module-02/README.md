@@ -1,0 +1,5 @@
+# Introduction to Module 02
+
+<p>Welcome to the second module of the course! This week, we will build important foundations for the rest of the course. In particular, we will see <em>how to measure information</em> using entropy. You will learn about various quantities (such as conditional entropy, or mutual information) that can express information content in various different scenarios, and you will practice with how to formalize "real-world" scenarios (such as throwing dice) using these quantities. All of these tools will come back throughout the other modules.</p>
+<p>Before we introduce the concept of entropy (information content), we need a mathematical tool: Jensen's inequality.</p>
+<p>As an addition to the written material in this module, you may find it useful to watch lecture recordings as well. A good source (which has a lot of overlap, but does not follow the contents of our course exactly!) is<a href="https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6"> this lecture series by David MacKay</a>.</p>

@@ -1,6 +1,6 @@
 # Definition: Conditional Mutual Information
 
-<p>Applying the <a title="Definition: Mutual Information" href="https://canvas.uva.nl/courses/2205/pages/definition-mutual-information" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/definition-mutual-information" data-api-returntype="Page">definition of mutual information</a> to the conditional distribution \(P_{XY|\cal A}\) naturally defines \(I(X;Y|{\cal A})\), the mutual information of \(X\) and \(Y\) conditioned on the event \(\cal A\):</p>
+<p>Applying the <a title="Definition: Mutual Information" href="https://canvas.uva.nl/courses/10933/pages/definition-mutual-information" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/pages/definition-mutual-information" data-api-returntype="Page">definition of mutual information</a> to the conditional distribution \(P_{XY|\cal A}\) naturally defines \(I(X;Y|{\cal A})\), the mutual information of \(X\) and \(Y\) conditioned on the event \(\cal A\):</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Conditional mutual information</strong></h4>
 Let \(X,Y,Z\) be random variables. Then the conditional mutual information of \(X\) and \(Y\) given \(Z\) is defined as \[ I(X;Y| Z) = \sum_z P_Z(z) I(X;Y|Z\!=\!z) \, , \] with the convention that the corresponding argument in the summation is \(0\) for \(z\) with \(P_Z(z)=0\).</div>

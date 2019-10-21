@@ -19,4 +19,4 @@ The random variables \(X_1, X_2, \dots, X_n\) form a Markov chain (notation: \(X
 <div class="content-box">left as exercise</div>
 </div>
 </div>
-<p>In the exercises, we will prove that if \(X_1, X_2, \ldots, X_n\) forms a Markov chain, then for all \(1 \leq i \leq j \leq k \leq n\): \(I(X_i, X_j) \geq I(X_i,X_k)\). This is a generalized form of the <a title="Data-Processing Inequality" href="https://canvas.uva.nl/courses/2205/pages/data-processing-inequality" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/data-processing-inequality" data-api-returntype="Page">data-processing inequality</a>.</p>
+<p>In the exercises, we will prove that if \(X_1, X_2, \ldots, X_n\) forms a Markov chain, then for all \(1 \leq i \leq j \leq k \leq n\): \(I(X_i, X_j) \geq I(X_i,X_k)\). This is a generalized form of the <a title="Data-Processing Inequality" href="https://canvas.uva.nl/courses/10933/pages/data-processing-inequality" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/pages/data-processing-inequality" data-api-returntype="Page">data-processing inequality</a>.</p>

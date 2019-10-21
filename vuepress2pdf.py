@@ -78,7 +78,7 @@ async def create_pdf(url=None):
             await page.goto(url + child[0], {'waitUntil': 'networkidle0'})
 
             for hide in config['hide_elements']:
-                await page.waitForSelector('.content')
+                await page.waitForSelector('.page') # .content
                 try:
                     await page.evaluate("""() => {{ document.querySelector('{}').style.display = 'none'; }}""".format(hide))
                 except:

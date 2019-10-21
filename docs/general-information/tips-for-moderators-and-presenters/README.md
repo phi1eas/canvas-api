@@ -1,6 +1,6 @@
 # Tips for Moderators and Presenters
 
-<p>The following tips are meant for moderators and presenters at the presentation sessions on Fridays. See <a title="Organization of the course" href="https://canvas.uva.nl/courses/2205/pages/organization-of-the-course" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/organization-of-the-course" data-api-returntype="Page">course organization</a> for details.</p>
+<p>The following tips are meant for moderators and presenters at the presentation sessions on Fridays. See <a title="Organization of the course" href="https://canvas.uva.nl/courses/10933/pages/organization-of-the-course" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/pages/organization-of-the-course" data-api-returntype="Page">course organization</a> for details.</p>
 <p><strong>Goal for moderators:</strong><span style="font-weight: 400;"> every student who is present at the session understands how to solve the problem. In other words, transfer your understanding and knowledge of the problem to the audience "through" the presenter.</span></p>
 <p><span style="font-weight: 400;">Tips for moderators:</span></p>
 <ul>

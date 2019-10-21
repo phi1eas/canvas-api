@@ -1,6 +1,6 @@
 # Markov Chains of Length 3
 
-<p>So far in this course we have mostly seen independent random variables. In source coding, we designed our codes according to a single distribution \(P_X\), and assumed that if we encoded a sequence of source symbols, the symbols in the sequence would be drawn independently according to \(P_X\). In the real world, however, subsequent events are often dependent on each other. For example, in an English text, after observing a letter \( \texttt{q} \), the next letter is much more likely to be \( \texttt{u} \) than it is to be \( \texttt{r} \), even though in general the letter \( \texttt{r} \) is more prevalent in English text. The event of observing the letter \(\texttt{q}\) changes the probability distribution of the next letter. We start by studying a restricted form of dependence between variables: Markov chains. Random variables form a Markov chain if the distribution of each random variable depends only on the outcome of the random variable that directly precedes it.</p>
+<p>Random variables form a Markov chain if the distribution of each random variable depends only on the outcome of the random variable that directly precedes it.</p>
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #bc0031;"><strong>Definition: Markov chain (of length 3)</strong></h4>
 The random variables \(X, Y,\) and \(Z\) form a Markov chain (notation: \(X \to Y \to Z\)) if and only if \[ P_{Z|XY} = P_{Z|Y}. \]</div>

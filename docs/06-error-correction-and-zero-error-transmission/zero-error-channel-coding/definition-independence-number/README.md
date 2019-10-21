@@ -10,5 +10,5 @@ The independence number \(\alpha(G)\) of a graph \(G\) is the size of the larges
 <div class="content-box pad-box-mini border border-trbl border-round">
 <h4 style="color: #2d3b45;"><strong>Example</strong></h4>
 Consider the following graph with \(V(G) = \{1,2,3,4,5,6\}\) and \(E(G) = \{\{1,2\}, \{2,3\}, \{2,4\}, \{3,4\}, \{4,5\}, \{4,6\}, \{5,6\}\}\):
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.uva.nl/courses/2205/files/329558/preview?verifier=wkoBJ5kHXla1669RTG9fzb3q18VILJNrUQU8MDE2" alt="A graph" width="137" height="111" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/329558" data-api-returntype="File"></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://canvas.uva.nl/courses/10933/files/1322450/preview?verifier=y53iv5fPD2C3r7l6isgg8XgpyhTJhlj8hzueAsV8" alt="A graph" width="137" height="111" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/files/1322450" data-api-returntype="File"></p>
 A maximal independent set \(\{1,3,6\}\) is marked in the graph. As there is no independent set of size 4 (can you prove that?), the independence number of this graph is 3.</div>

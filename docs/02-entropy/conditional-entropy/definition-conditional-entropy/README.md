@@ -1,6 +1,6 @@
 # Definition: Conditional Entropy
 
-<p>Let \(X\) be a random variable and \(\cal A\) an event. Applying <a title="Definition: Shannon Entropy" href="https://canvas.uva.nl/courses/2205/pages/definition-shannon-entropy" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/pages/definition-shannon-entropy" data-api-returntype="Page">the definition of entropy</a> to the conditional probability distribution \(P_{X|\cal A}\) allows us to naturally define the entropy of \(X\) conditioned on the event \(\cal A\):</p>
+<p>Let \(X\) be a random variable and \(\cal A\) an event. Applying <a title="Definition: Shannon Entropy" href="https://canvas.uva.nl/courses/10933/pages/definition-shannon-entropy" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/pages/definition-shannon-entropy" data-api-returntype="Page">the definition of entropy</a> to the conditional probability distribution \(P_{X|\cal A}\) allows us to naturally define the entropy of \(X\) conditioned on the event \(\cal A\):</p>
 <p>\[ H(X|{\cal A}) := \sum_{x\in {\cal X}} P_{X|{\cal A}}(x)\cdot \log \frac{1}{P_{X|{\cal A}}(x)}. \]</p>
 <p>This leads to the following notion:</p>
 <div class="content-box pad-box-mini border border-trbl border-round">

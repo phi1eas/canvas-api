@@ -60,10 +60,10 @@ These codes can be visualised a as binary trees, with marked codewords, as follo
 <table style="width: 100%;">
 <tbody>
 <tr>
-<td style="width: 25%; text-align: center;"><img src="https://canvas.uva.nl/courses/2205/files/129820/preview?verifier=u0q3wDA9EBKQipPVX2RfCNNAY9uXgtbLBbw9kjbl" alt="tree for code 1" width="71" height="114" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129820" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129819/preview?verifier=hywuHJIM5BhDInZ0ZztlqWVvVKtGFZBENfMa3QMX" alt="tree for code 2" width="105" height="81" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129819" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129818/preview?verifier=7WC9yv0PjxBja7ShtYC9xGxzhKKKOUri6P43j4WJ" alt="tree for code 3" width="105" height="116" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129818" data-api-returntype="File"></td>
-<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/2205/files/129817/preview?verifier=KD29Pa5lzef9mbgK6nxm3XPFyeQ1po5DQXZ5vFeP" alt="tree for code 4" width="105" height="132" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/2205/files/129817" data-api-returntype="File"></td>
+<td style="width: 25%; text-align: center;"><img src="https://canvas.uva.nl/courses/10933/files/1322416/preview?verifier=Ou2pIKRWi4StlHSR9LUhKmbMWvWKS1ZpzgipHY8L" alt="tree for code 1" width="71" height="114" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/files/1322416" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/10933/files/1322415/preview?verifier=fCg3UBScgskRXeDFDWg7rYa18M7zY95ZMNpwfg0t" alt="tree for code 2" width="105" height="81" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/files/1322415" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/10933/files/1322414/preview?verifier=oJhYlYj4m8ZqaALtGBMzWxT3QaZbfF1rMUpFenjY" alt="tree for code 3" width="105" height="116" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/files/1322414" data-api-returntype="File"></td>
+<td style="width: 25%;"><img src="https://canvas.uva.nl/courses/10933/files/1322413/preview?verifier=ieuuL7pWG8JZkyfBDIlmzOtHDgeJn6xgeCL8c4rw" alt="tree for code 4" width="105" height="132" data-api-endpoint="https://canvas.uva.nl/api/v1/courses/10933/files/1322413" data-api-returntype="File"></td>
 </tr>
 <tr>
 <td style="width: 25%; text-align: center;">\(C_1\)</td>

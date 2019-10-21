@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="image-wlln.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128.52296pt" height="97.32854pt" viewBox="-32.74944 -34.04552 128.52296 97.32854 "> 
+<g transform="translate(0, 63.28302 ) scale(1,-1) translate(0,34.04552 )"> 
+          <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g>
+ <g>
+ <g>
+ <g stroke-width="0.2pt">
+ <g stroke="rgb(50.0%,50.0%,50.0%)">
+ <g fill="rgb(50.0%,50.0%,50.0%)">
+ <path d=" M  0.0 -5.73514 L  0.0 -1.46739 M  40.52582 -5.73514 L  40.52582 -1.46739 M  81.05164 -5.73514 L  81.05164 -1.46739 M  0.0 63.08302 L  0.0 58.81529 M  40.52582 63.08302 L  40.52582 58.81529 M  81.05164 63.08302 L  81.05164 58.81529  " style="fill:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g stroke-width="0.2pt">
+ <g stroke="rgb(50.0%,50.0%,50.0%)">
+ <g fill="rgb(50.0%,50.0%,50.0%)">
+ <path d=" M  -8.10565 0.0 L  -3.83803 0.0 M  -8.10565 27.29797 L  -3.83803 27.29797 M  -8.10565 54.59595 L  -3.83803 54.59595 M  89.15729 0.0 L  84.88966 0.0 M  89.15729 27.29797 L  84.88966 27.29797 M  89.15729 54.59595 L  84.88966 54.59595  " style="fill:none"/>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <path d=" M  -8.10565 -5.73514 L  -8.10565 63.08302 L  89.15729 63.08302 L  89.15729 -5.73514 L  -8.10565 -5.73514 Z  " style="fill:none"/>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-2.5,-15.71254)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,33.0258,-15.71254)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(7.50002,0)" text-anchor="middle"  font-size="10"> 
+500</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,69.66272,-15.71255)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(11.38892,0)" text-anchor="middle"  font-size="10"> 
+1<tspan font-family="cmmi" font-size="10">,</tspan> 000</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-16.63863,-3.22221)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+0</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-29.41646,24.07576)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.88892,0)" text-anchor="middle"  font-size="10"> 
+0<tspan font-family="cmmi" font-size="10">.</tspan>02</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-29.41646,51.37373)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(8.88892,0)" text-anchor="middle"  font-size="10"> 
+0<tspan font-family="cmmi" font-size="10">.</tspan>04</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <clipPath id="pgfcp2"> <path d=" M  -8.10565 -5.73514 L  89.15729 -5.73514 L  89.15729 63.08302 L  -8.10565 63.08302 Z  "/>
+</clipPath>
+ <g clip-path="url(#pgfcp2)">
+ <g>
+ <g fill="rgb(95.29419%,39.99939%,9.80377%)">
+ <path d=" M  0.0 0.0 L  2.02629 0.0 L  4.05258 0.0 L  6.07887 1.50848 L  6.48413 5.93228 L  6.88939 16.63966 L  7.29465 33.89607 L  7.6999 50.9557 L  7.862 55.26979 L  7.94305 55.59311 L  8.0241 57.28606 L  8.10516 57.34789 L  8.18622 55.7892 L  8.26726 55.60422 L  8.34831 52.9275 L  8.51042 48.94476 L  8.91568 32.04921 L  9.32094 16.27188 L  9.7262 6.46803 L  10.13145 2.03075 L  12.15775 0.00023 L  14.18404 0.0 L  16.21033 0.0 L  20.26291 0.0 L  24.31549 0.0 L  81.05164 0.0  " />
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,20.858,-30.71254)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(19.66782,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmmi" font-size="10">n </tspan>= 1000</text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                                       </g> 
+</svg> 
